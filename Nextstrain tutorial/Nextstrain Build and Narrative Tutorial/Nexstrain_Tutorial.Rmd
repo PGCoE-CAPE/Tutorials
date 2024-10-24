@@ -1,0 +1,805 @@
+---
+title: "Nextstrain Workshop Tutorial"
+author:
+- Cody Dailey^[[daileyco@uga.edu](mailto:daileyco@uga.edu)]
+- Leke (Luke) Lyu^[[lekelyu@uga.edu](mailto:lekelyu@uga.edu)]
+- Tanin Rajamand^[[Tanin.Rajamand@uga.edu](mailto:Tanin.Rajamand@uga.edu)]
+subtitle: Bahl Lab, Center for Applied Pathogen Epidemiology and Outbreak Control
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+  pdf_document:
+    toc: true
+    toc_depth: '4'
+---
+
+
+\newpage
+## Preface {-}
+
+This is a tutorial for the Nextstrain Workshop hosted by the Bahl Lab at UGA on 20 June 2024. In this document, you will find step-by-step instructions for analyzing pathogen genomic data using Nextstrain and creating presentations using Nextstrain Narratives. 
+
+
+### Prerequisites {-}
+
+You should have already a UGA account (MyID) with multi-factor authentification set up via the Duo Mobile App ([archpass](https://eits.uga.edu/access_and_security/infosec/tools/archpass/)). 
+
+Additionally, you will need a GitHub Account ([GitHub Onboarding](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account)), which is necessary for sharing results from your analyses in the Nextstrain Narratives. 
+
+
+
+### Required Software {-}
+
+We will be using several software packages within a high-performance computing environment made available by the Georgia Advanced Computing Resource Center ([GACRC](https://gacrc.uga.edu)). Fortunately, GACRC has installed the necessary software for us. These include **Nextstrain** for phylogenetics analysis pipelines and **Singularity** for container runtimes. Although these software have been installed for us, we will still need to do some basic set up before we can begin our analyses. This will be described in detail within this tutorial. 
+
+
+
+### Suggested Databases {-}
+
+For our training today, the data have already been compiled and cleaned. However, here are some resources from which you may curate your own datasets in the future:
+
+- **Flu Databases:**
+  - [GISAID](https://www.gisaid.org/)
+  - [NCBI Influenza Virus Database](https://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi)
+  - [IRD - Influenza Research Database](https://www.fludb.org/brc/home.spg?decorator=influenza)
+
+- **General Databases:**
+  - [NCBI Genbank](https://www.ncbi.nlm.nih.gov/nuccore)
+  - [VIPR - Virus Pathogen Database and Analysis Resource](https://www.viprbrc.org/brc/home.spg?decorator=vipr)
+  - [NCBI Virus Variation Tool](https://www.ncbi.nlm.nih.gov/genome/viruses/variation/)
+
+
+
+
+
+\newpage
+## Zika Virus Nextstrain Example
+
+We will begin by working through an example provided by Nextstrain which [runs a Zika virus phylogenetic workflow](https://docs.nextstrain.org/en/latest/tutorials/running-a-phylogenetic-workflow.html). 
+
+
+
+### Prerequisites Checklist {-}
+
+- Duo Security installed on your phone
+- Valid MyID
+- Chrome browser (preferred)
+
+
+
+### Step 1 - Logging in to GACRC
+
+#### 1. **Open Your Web Browser**
+
+- Navigate to [GACRC OnDemand](http://ondemand.gacrc.uga.edu)
+- Log in using your UGA MyID and password
+- Complete Duo Security authentication
+
+![UGA Login](./screenshots/ugalogin.png)
+
+#### 2. **Create X Desktop Session**
+
+- Find and open the X Desktop Session under "Interactive Apps" on Sapelo2. You can either select it from the drop-down menu at the top of the webpage or by scrolling down a bit on the home page.
+![X Desktop Launch from Menu](./screenshots/xdesktop.png)
+![X Desktop Launch](./screenshots/xdesktop2.png)
+
+
+- Specify resources:
+  - **Cores:** 4
+  - **Duration:** 8 hours
+  - **Memory:** 4 GB
+![Specify Resources](./screenshots/xdesktop_resources.png)
+  - Select the partition labeled "batch" 
+  - Scroll down and Click "launch"
+
+This will send your request for resources to a queue:
+
+![X Desktop Queue](./screenshots/xdesktop_queue.png) 
+
+After a few moments, the X desktop session should be ready. 
+
+
+  - Click "Launch the X Desktop Session on Sapelo2" once resources are allocated.
+![Launch X Desktop Session](./screenshots/xdesktop_launch.png) 
+This will open a new tab with the X Desktop shown in the browser window. 
+![X Desktop Session](./screenshots/xdesktop_opened.png) 
+
+Note: you may be prompted to allow access to the clipboard. Click allow as this will make it easier to copy & paste commands from your local clipboard into the X Desktop environment. 
+
+
+
+
+#### 3. **Load Nextstrain**
+
+- Open up a terminal by clicking the icon at the bottom of the screen. 
+![X Desktop Terminal](./screenshots/xdesktop_terminal.png)
+
+
+- Load the Nextstrain module with the following command:
+
+```
+ml Nextstrain-CLI/20240604
+```
+
+You may either copy & paste into the command line or type it out yourself. 
+
+
+![Nexstrain Module Load](./screenshots/nexstrain_moduleload.png)
+
+
+
+- Set up the Singularity runtime with the following command:
+
+```
+nextstrain setup --set-default singularity
+```
+
+Note: this may take a few minutes to complete. Please, be patient :) The command line will remain blank while the command is processing. 
+
+
+![Nexstrain Module Load](./screenshots/nexstrain_singworking.png)
+
+
+
+
+
+
+- Once finished, test your Nextstrain set up by first opening nexstrain shell and then running Augur and Auspice help commands.
+
+```
+nextstrain shell .
+augur --help
+auspice --help
+```
+
+When nextstrain CLI is loaded successfully, you will see the rainbow icon. 
+
+![Test Nextstrain set up](./screenshots/nextstrain_shell.png)
+
+
+
+If the set up was successfull, you may exit the nextstrain CLI by using the exit command: 
+
+```
+exit
+```
+
+Once closed, you will not see the rainbow icon.
+
+
+
+\newpage
+### Step 2 - Running the Zika workflow
+
+
+#### 0. **Alternative Shell**
+
+If you are unable to copy & paste into the X Desktop session but wish to do so, you may leave the X Desktop session open and return to the browser tab for GACRC OnDemand and click the shell icon to open a new tab. 
+
+![Open X Desktop Shell](./screenshots/xdesktop_shell.png)
+![Open X Desktop Shell](./screenshots/xdesktop_shellview.png)
+
+Note: whichever option you choose to access command line, you should have the same working directory (/home/{Your MyID}). You can check your working directory using the `pwd` command and print its contents using `dir`. 
+
+
+#### 1. **Load Nextstrain Module**
+
+- However you access the command line, load the Nextstrain module:
+
+```
+ml Nextstrain-CLI/20240604
+```
+
+#### 2. **Create a directory/folder for the data and your results**
+
+- Make up a folder named `nextstrain_training` with:
+
+```
+mkdir nextstrain_training
+```
+
+![Create Directory](./screenshots/makedir.png)
+
+- Then, navigate into this newly created directory with:
+
+```
+cd nextstrain_training
+```
+
+
+
+#### 3. **Download the Zika data and workflow:**
+
+- Once within the training directory, download the example Zika workflow repository with:
+
+```
+git clone https://github.com/nextstrain/zika-tutorial
+```
+
+![Git Clone](./screenshots/gitclone.png)
+
+
+
+
+#### 4. **Run the Example Zika Workflow:**
+- Run the workflow with:
+
+```
+nextstrain build --cpus 1 zika-tutorial/
+```
+
+Note: this may take a couple of minutes. Please, be patient :)
+
+![Finished Run](./screenshots/finishedbuild.png)
+
+
+### Step 3 - Visualize Results Using Auspice
+
+
+#### 0. **Open X Desktop Session**
+
+- If you used the X Desktop Shell for the previous step, go back to your tab with the X Desktop Session. 
+
+
+#### 1. **Set Firefox as Default Browser**
+
+- The path to Firefox is: `/apps/eb/Firefox/120.0.1`. Click the app icon to open.
+![Firefox Location](./screenshots/firefox.png)
+
+- Navigate to the browser settings and make Firefox the default browser. 
+![Firefox Default Browser](./screenshots/firefox_default.png)
+You may close the browser once you've set the default. 
+
+
+
+#### 2. **Visualize Results with Auspice** 
+
+- Back in the command line (terminal), change your working directory back to the home directory. You can do this a few different ways. If you've been following along, your present working directory should be /home/{Your MyID}/nextstrain_training. If it is, you can simply navigate up one directory by using the following command:
+
+```
+cd ..
+```
+Note: the important part is that the directory path specified in the next command matches the location of your results *based on your present working directory*. You may adjust the directory path in the next command if you'd rather. 
+
+
+- Run the following command to view your results:
+
+```
+nextstrain view nextstrain_training/zika-tutorial/auspice/
+```
+
+
+![Zika Results](./screenshots/resultsview.png)
+
+
+When you are finished viewing your results, you can close Firefox and terminal. 
+
+
+
+
+
+
+\newpage
+## Creating a Nextstrain Narrative
+
+### Step 0 - What is the Narrative?
+Nextstrain offers an "Advanced Data Visualization Platform" that allows researchers to tell data-driven stories about viruses and other pathogens. It uses a special type of text file (Markdown) to combine clear explanations (on the left) with visualizations (like family trees and maps) on the right. This flexibility lets scientists tailor the information for any audience, from experts to decision-makers. The platform is particularly useful for quickly analyzing recent genetic data and then sharing those findings in an interactive and informative way.
+
+
+
+### Step 1 - Downloading the Data
+
+
+#### 1. Navigate to the home directory
+
+- Upon completion of the Nextstrain analysis, navigate to your home directory on the platform (OnDemand). 
+
+![Open Home Directory](./screenshots/homedir.png)
+
+After clicking this, you will be able to view the contents of your home directory. This should contain the directory you created for the Zika workflow. 
+
+![Home Directory](./screenshots/resultsdir.png)
+ 
+The "zika-tutorial" folder contains the core analysis elements. You'll find four subfolders: "auspice," "config," "data," and "results," along with two files: "README.md" and "Snakefile."
+
+The "data" and "config" folders were already populated with the necessary files when you cloned the repository using the command “git clone https://github.com/nextstrain/zika-tutorial”. 
+ 
+Within the "zika-tutorial" folder, the one crucial for building your narrative is "auspice."
+
+
+
+#### 2. Open the Auspice Subdirectory
+
+- Navigate within this directory all the way to the auspice subdirectory which should contain two files. 
+
+![Auspice Directory](./screenshots/auspicedir.png)
+
+
+This folder contains two key files you'll need: "zika.json" and "zika_root-sequence.json".
+
+
+#### 3. Download results
+ 
+- Download these files to your local computer
+
+
+![Download Results](./screenshots/downloadresults.png)
+
+Note: you can verify the structure of your .json file. The [Auspice website](https://auspice.us/) can help you confirm the validity of your generated JSON file to ensure the file is structured correctly. Additionally, it will allow you to preview the visualizations you requested during the analysis. This lets you verify if the visualizations were created as intended and accurately represent your data.
+
+
+
+### Step 2 - Create a GitHub repo for your narrative
+
+
+#### 1. Log in to your GitHub account
+
+- Go to https://github.com/ and log in
+
+
+#### 2. Create a new repo using the Nextstrain Narrative template
+
+- Once you've downloaded the files, head over to [this website](https://github.com/nextstrain/nextstrain-narratives-demo). 
+
+It offers a template where you can upload your downloaded JSON files to build your narrative.
+
+
+- Click on the “Use this template” button and create a new repository. 
+ 
+![Template](./screenshots/gittemplate.png)
+
+- Create a public repository named exactly "zika" (lowercase). 
+
+![Create Repo](./screenshots/createrepo.png)
+
+
+This ensures compatibility with the downloaded JSON files ("zika.json" and "zika_root-sequence.json"). Any deviation in the repository name (including capitalization) will prevent access to these files, hindering your ability to publish the phylogenetic tree and build your narratives.
+
+Once you created you repository you can see that you will have 4 items there, 2 are folders and 2 are files.
+
+
+![Add File](./screenshots/tanin/folders.png)
+ 
+### Step 3 - Add your Zika Workflow Results to the newly created repo
+
+#### 1. Create a new folder called auspice
+
+- To create this new folder, click on “Add file” button and then “+ Create new file”.
+
+![Add File](./screenshots/addfile.png)
+
+Next you see that you can add a new file, but we need a new folder. Making a new folder is very similar to making a new file, you just add one “/” right after you wrote the word “auspice”. 
+
+- Add a README.md file and label your folder. 
+
+Make sure to commit your changes. 
+
+![Create README](./screenshots/addreadme.png)
+
+#### 2. Add Zika Results
+
+- Upload the two Zika results files to the Auspice folder
+
+Then you want to click on “Add file” and then “upload files”. In this step, you want to upload the 2 files you downloaded from the auspice folder in OnDemand. Those two files are "zika.json" and "zika_root-sequence.json". Please commit the changes. 
+ 
+![Upload](./screenshots/uploadfiles.png)
+ 
+ 
+ 
+
+This is how your repository should look like now:
+
+![Repo](./screenshots/repowfiles.png)
+
+#### 3. View your results
+
+This step lets you access your Nextstrain analysis through a web link. The link follows a specific format:
+https://nextstrain.org/community/{YourGitHubUsername}/zika
+
+- Replace {YourGitHubUsername} with your actual GitHub username.
+
+For example, my username is "taneenak," then my link would be:
+https://nextstrain.org/community/taneenak/zika
+
+
+
+This link will allow you to view and interact with your Zika analysis on the Nextstrain platform. This should look similar to the viewer we used with Firefox earlier. 
+
+
+![Webview](./screenshots/webview.png)
+
+
+
+
+
+
+
+
+
+
+
+
+### Step 4 - Creating a Narrative
+
+
+#### 1. Open the narratives folder in your repo
+
+Now, let's shift our focus to the "narratives" folder.
+
+- Open the file located in this folder by clicking it
+
+
+
+
+Once you've located the file within the "narratives" folder, you can edit it to create your narrative. This typically involves opening the file in a suitable text editor and modifying its name and content.
+
+- Click the pencil icon to edit the file within GitHub's text editor
+
+
+![Edit Narrative File](./screenshots/editmd.png)
+
+- Rename the file to "zika_{whatever you want}.md"
+
+
+This is how I named my file:  zika_20240620.md
+
+It is important that the naming of the file starts with the name of the repository (zika in this case), then you must add “_” and specify the name further. 
+
+
+- Go ahead and commit this change
+
+
+![Rename Narrative File](./screenshots/createzikamd.png)
+
+
+
+
+#### 2. Create your narrative title page
+
+The Markdown File: 
+The narrative you'll be crafting is written in Markdown, a user-friendly language invented by John Gruber in 2004. Markdown simplifies formatting text and effortlessly translates it into HTML (and even other formats!). This means you can incorporate images, links, tables, and more into your narrative, making it visually engaging and informative.
+
+One of Markdown's strengths is its ease of adding links. To include a link, simply enclose the text you want displayed in square brackets [] followed by the website address in parentheses (). This will prove useful as you edit your narrative file. 
+
+Your narrative file will consist of two main sections: the title and the slides. 
+
+The title is separated by two sets of three hyphens (--- one on top and one on the bottom of this section), creating a clear distinction. The file should already contain the title by default. 
+
+
+Each of the slides represents a specific result you want to include in your narrative. These slides may contain text, formatted using Markdown syntax and embedded elements like images or links to enhance your explanations.
+
+
+As mentioned earlier, the title section of your Markdown file is enclosed within two hyphens (--- on either side). But why is the title important?
+
+The title serves two key functions:
+
+- **First Slide:** It becomes the content of your very first slide within the narrative.
+- **Identification:** It provides a clear label for your narrative, making it easy to identify within the Nextstrain platform or when shared with others.
+
+
+
+- Edit your title in the markdown file
+
+Yours may look something like this:
+
+```
+---
+title: "Zika Virus Phylogenetic Analysis"
+authors: "Tanin Rajamand"
+authorLinks: "mailto:tr44022@uga.edu"
+created date: "June 10, 2024"
+last update: "June 17, 2024"
+dataset: "https://nextstrain.org/community/taneenak/zika"
+auspiceMainTitle: "Zika Tree"
+abstract: |
+    This narrative explores the phylogenetic analysis of the Zika virus using Nextstrain. It includes slides on the tree, map views of the virus's evolution, and entropy analysis.
+---
+
+```
+
+Note the dataset argument is the link we used earlier to view our results. 
+
+
+You can explore all the data that is available to you in this slide. And when you click on the author’s name, you can reach them. When you are creating your narratives, you can add your GitHub, email, or any other way of communication you prefer. 
+
+We previously discussed the importance of the title section, but what information should it contain?
+
+Here are the essential elements recommended for your title: the title of your Nextstrain and the dataset you used. The dataset can be the Nextstrain you created earlier.
+
+While these are the core elements, you should further enhance your title with additional details:
+
+- **Author(s):** The name of the person or people who created the narrative.
+- **Translator(s):** The name of the person or people who translated the narrative, if applicable.
+- **Abstract:** A brief summary of the narrative.
+- **Dates:** 
+  - The date the file was created: `r Sys.Date()`.
+  - The last edited date.
+- **Licenses:** The type of license under which the narrative is released, e.g., CC-BY.
+
+By incorporating this information into your title, you create a clear and informative introduction to your narrative.
+
+
+### Step 5 - Create the Link to Your Narrative: 
+
+To create the link to your narrative, you need to follow a simple pattern:
+https://nextstrain.org/community/narratives/{Your_GitHub_Username}/{the_disease}/{The_specific_name_you_chose_for_your_narrative_file}
+
+The example for taneenak dataset for Zika:
+https://nextstrain.org/community/narratives/taneenak/zika/6202024
+
+After this step, you can refresh this link as you update the markdown file and see the changes as you work on your file.
+
+### Step 6 - Add the link to the Narrative to Your GitHub
+
+In this step, click on your repository and scroll down. This is the what you should see: 
+
+![Example Slide in Markdown](./screenshots/tanin/step5.png)
+
+Then start editing this file, change the link to the new link you got for the narrative. 
+For example, I changed mine to this:
+![Example Slide in Markdown](./screenshots/tanin/step5.2.png)
+
+### Step 7 - Add Content to Your Narrative as Slides
+
+Markdown/the Slides: 
+Now that we've covered the title section, let's delve into the slides - the heart of your narrative. Nextstrain offers a powerful two-panel format for each slide:
+
+Left Panel: Text-Based Insights - This panel provides the platform for you to present your analysis and interpretations in detail. Explain your findings, highlight key points, and guide your audience through your scientific journey.
+
+Right Panel: Visual Storytelling - This panel is your creative canvas! Here, you can embed dynamic elements like phylogenetic trees, maps, images and more. This flexibility allows you to tailor the content to resonate with any audience, from scientific experts to policymakers.
+
+#### 1. Types of Slides:
+
+##### Static Content
+One great option is what we call “Static Content”. This content is extremely useful when you want to give background information about a certain disease to your audience. This content essentially means that instead of having visual aids, on the right side of the slide, you can have more words and images. 
+For example, we incorporated a slide in our narratives that talks about what the virus is, its treatments, and its symptoms. 
+
+##### Images
+We later also added an image that shows the Zika Geographic Risk Classifications on a Map. You can use this section to add pictures of the virus you are specifically working on to show its structure, the targeted organs, and its impact on various host species. There are lots of other options available for you based on your expertise and your audience’s needs. 
+
+
+
+#### 2. Create a slide, edit your markdown file.
+
+Below your title section, add a \# to indicate a new slide. 
+
+- Add a new slide to your narrative markdown
+
+#### 3. Using Titles and Links: 
+In Markdown, you can create a linked title that stands out visually and offers additional information through a hyperlink. To achieve this, follow this pattern:
+-	Start with a # symbol, indicating a level 1 heading (the main title) for your narrative.
+-	Within square brackets [], place the actual text you want to be displayed as the title.
+-	Following the title text in parentheses (), add the web address (URL) you want to link to. When someone clicks on the title, they'll be directed to that webpage.
+Here is an example of the code in markdown:
+![Pattern](./screenshots/tanin/pat.png)
+
+
+
+### Step 8 - Add Different Types of Content
+
+#### 1. Add a Full view 
+
+In this step, I would like you to have the full view of the map, the tree and the entropy all on the right side of the panel. 
+Add the link to the full view as follows:
+![Example Slide in Markdown](./screenshots/tanin/full.png)
+In here, what is in the bracket [] is the title: Practice/ Full View 
+The link refers to the Full View and you can get this from the nextstrain built we already created.
+This was for example the link I used:
+
+https://nextstrain.org/community/taneenak/zika
+
+Yours will be different based on the your GitHub Username. 
+
+
+#### 2. Add a Map
+
+In this step, I would like you to have the full view of the map only on the right side of the panel. 
+Here we turn off the entropy and the tree and we only focus on the map. 
+
+![Example Slide in Markdown](./screenshots/tanin/map.png)
+
+#### 3. Add Animation 
+
+In this step, I would like to show you how to make an animation of the tree. We filter the data based on country and we chose Brazil, Venezuela, Singapore, and the Dominican Republic as examples. 
+
+![Example Slide in Markdown](./screenshots/tanin/filter.png)
+You just click on the "Date Range" button. 
+
+
+![Example Slide in Markdown](./screenshots/tanin/play.png)
+
+
+Here is the code:
+
+![Example Slide in Markdown](./screenshots/tanin/animate.png)
+
+
+
+#### 4. Add side-by-side view 
+
+Here we will be using Singapore and the Dominican Republic. Turn off the entropy and turn on the tree and map. 
+Then we click on the grid display 
+
+![Example Slide in Markdown](./screenshots/tanin/grid.png)
+
+
+Here is the code:
+![Example Slide in Markdown](./screenshots/tanin/side.png)
+
+
+
+#### 5. Add Static Content 
+
+
+Note that the content on the for the left panel directly follows the \# and the right panel content is between the sets of ` ``` ` with the auspiceMainDisplayMarkdown included next to the first set of backticks. 
+
+This tells Nextstrain Narratives to format the content on the right side of the slide. While GitHub might render this section as a code block, rest assured, that Nextstrain Narratives understands the purpose and will display the text appropriately within your slide.
+Here is a picture of how GitHub will read this: 
+
+![GitHub Example](./screenshots/tanin/githubcode.png)
+
+
+To make bullet points in this section, you need to add two lines in between the bullets. Otherwise, they will be printed as a straight line instead of each item at a new line. 
+
+```
+```auspiceMainDisplayMarkdown
+  # First Title:
+Content. 
+
+ # Second Title:
+- First bullet point
+
+- Second bullet point 
+
+```
+
+```
+
+#### 6. Add Images:
+Incorporating images is another powerful way to enhance your narrative's visual appeal. Here's the pattern you'll follow to include photos within the right-side panel:
+
+![Example of Image Pattern](./screenshots/tanin/img.png)
+
+##### 7. Meaning of each component:
+- `<img src="...">`: This indicates that you're inserting an image.
+- `src="image_address.png"`: This specifies the source of the image file.
+  - PS: Replace "image_address.png" with the actual web address of your uploaded image. Don't use the location where the image is stored.
+- `alt="image_name"`: The alt attribute provides alternative text for the image in case the image cannot be loaded or for visually impaired users who rely on screen readers.
+- `width="100%"`: This attribute controls the width of the image.
+
+Before using this code, make sure to upload your images to the "figures" section of your GitHub repository. This is what it will look like:
+
+
+![figure folder](./screenshots/tanin/figures.png)
+
+
+The README.md and the toy_alignment_tree.png already exist in your repository since you are using a template to create yours. For our example, we uploaded a photo and named it zika.png.  
+
+
+#### 8. Adding Multiple Images:
+Good news! You can include multiple images within a single slide's right panel. Simply follow the pattern and everything will be set. 
+By following these guidelines, you can effectively integrate images into your narratives, enriching the visual experience for your audience.
+An example of what including an image will look like in the markdown file. 
+
+
+![Example Narrative](./screenshots/tanin/imgm.png)
+
+### Step 9 - Think about Your Dataset and the Message You Want to Send:
+Here is an example that shows the Zika narrative file I prepared. 
+https://github.com/taneenak/zika/blob/main/narratives/zika_6202024.md
+Try to tell a story and have meaningful slides that are important to your audience. Show the audience the sources and the sinks of transmission, see if there was a single transmission event that was followed by more transmissions or if we had multiple introductions. 
+Keep your virus in mind, although Zika is a disease that is transmitted by mosquito bites, it can also get transmitted through sexual activities or from a mother to baby while pregnant. This is why we can have continued transmission in a population.
+Another thing to keep in mind is that you need to constantly be thinking about the specific question you are trying to answer and see what type of visualization aid could help you answer that better. 
+
+
+### Step 10 - Preview Your Work: 
+When you preview your work in GitHub, you can see the titles section of the markdown is in a table format, the smaller titles are bolded in blue, the texts on the right-hand side panel are in a code block, and everything else appears as regular text. 
+
+### Step 11 - Verify the Markdown File You Created: 
+Head over to this GitHub. There, you'll find an example Markdown file related to Monkey Pox and Influenza narratives. Download this file as a reference.
+Then use this debugger tool which will parse your Markdown code to provide a preview of the corresponding narrative it would generate. This allows you to identify any errors or formatting issues that might affect your narrative. This example was given to you as a:
+
+
+- **Reference Point**: represents a well-structured Markdown file to help you understand the format and proper syntax.
+- **Debugging Assistant**: identify and rectify any errors or formatting issues in your narrative before finalizing it.
+
+The link to the GitHub: https://github.com/nextstrain/narratives/blob/master/how-to-write_basics.md
+The link to the debugger website: https://nextstrain.org/edit/narratives
+This is how the debug website will look like when you uploaded that markdown file. 
+
+
+![Debugging Tool](./screenshots/tanin/degug.png)
+
+
+Everything is green and nothing is red! Good news! If something is gray, it just means that this particular aspect of the narrative is not accounted for with this link. There's no need to worry, it doesn't signify errors.
+
+### Step 12 - Debug Your Work: 
+Now that you've crafted your narrative in the Markdown file on GitHub, it's wise to verify its functionality. Download your narratives file from your GitHub Repository and check it against the same debugger website. 
+
+### Step 13 - Explore the Data Yourself:
+Look at the top right corner of your narrative, it has this button called “Explore the Data Yourself”. When you click on it, it takes you to the Nextstrain built we created earlier. 
+You can click back on it to return to the narratives. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+## Nextstrain Code Breakdown
+
+
+Creating a pathogen workflow
+
+Create a folder for results
+
+Enter an interactive Nextstrain shell in the current directory
+
+Index the Sequences
+Precalculate the composition of the sequences (e.g., numbers of nucleotides, gaps, invalid characters, and total sequence length) prior to filtering.
+The resulting sequence index speeds up subsequent filter steps especially in more complex workflows.
+
+Filter the Sequences
+Filter the parsed sequences and metadata to exclude strains from subsequent analysis.
+And subsample the remaining strains to a fixed number of samples per group.
+
+Align the Sequences
+Create a multi-sequence alignment using a custom reference.
+Now the pathogen sequences are ready for analysis.
+
+Construct the Phylogeny
+Infer a phylogenetic tree from the multi-sequence alignment.
+
+Get a Time-Resolved Tree
+Augur can also adjust branch lengths in this tree to position tips by their sample date and infer the most likely time of their ancestors, using TreeTime.
+
+Annotate the Phylogeny: Reconstruct Ancestral Traits
+TreeTime can also infer ancestral traits from an existing phylogenetic tree and the metadata annotating each tip of the tree. 
+
+Annotate the Phylogeny: Infer Ancestral Sequences
+Next, infer the ancestral sequence of each internal node and identify any nucleotide mutations on the branches leading to any node in the tree.
+
+Annotate the Phylogeny: Identify Amino-Acid Mutations
+Identify amino acid mutations from the nucleotide mutations and a reference sequence with gene coordinate annotations. 
+
+Export the Results
+Finally, collect all node annotations and metadata and export it in Auspice’s JSON format. 
+This refers to three config files to define colors via config/colors.tsv, latitude and longitude coordinates via config/lat_longs.tsv, as well as page title, maintainer, filters present, etc., via config/auspice_config.json. The resulting tree and metadata JSON files are the inputs to the Auspice visualization tool.
+
+
+
+
+

@@ -1,0 +1,2416 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Tutorial Nextstrain build for HPAI virus",
+    "updated": "2024-06-17",
+    "build_url": "https://github.com/taneenak/HPAI",
+    "maintainers": [
+      {
+        "name": "Tanin Rajamand"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 1703,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/HPAI_outgroup.gb"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      }
+    ],
+    "filters": [
+      "country",
+      "region",
+      "author"
+    ],
+    "panels": [
+      "tree",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2009.9626973009058,
+        "confidence": [
+          2007.9235588394388,
+          2011.5450193350239
+        ]
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.01725434077881888,
+          "num_date": {
+            "value": 2013.9800144736616,
+            "confidence": [
+              2012.8973932130123,
+              2014.0909566290404
+            ]
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "EPI_ISL_177761|A/cat/Sichuan/SC18/2014|Pet|Asia|Cat|2014-05-02",
+            "node_attrs": {
+              "div": 0.019606801673534957,
+              "num_date": {
+                "value": 2014.3328767123287,
+                "confidence": [
+                  2014.3328767123287,
+                  2014.3328767123287
+                ]
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A87G",
+                  "A581G",
+                  "G854A",
+                  "G1430A",
+                  "G1473A"
+                ]
+              }
+            }
+          },
+          {
+            "name": "EPI_ISL_266596|A/swine/Guangdong/G3/2015|LivestockMammal|Asia|Swine|2015-03-26",
+            "node_attrs": {
+              "div": 0.02433783725978693,
+              "num_date": {
+                "value": 2015.231506849315,
+                "confidence": [
+                  2015.231506849315,
+                  2015.231506849315
+                ]
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G294A",
+                  "C350T",
+                  "C447A",
+                  "A448G",
+                  "A679G",
+                  "C709T",
+                  "C871T",
+                  "G1059A",
+                  "C1391T",
+                  "A1470G",
+                  "A1551G"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 0.025757985918365756,
+          "num_date": {
+            "value": 2015.8388603296175,
+            "confidence": [
+              2015.3048002181342,
+              2016.153979265123
+            ]
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G46A",
+              "G93A",
+              "G154A",
+              "T163C",
+              "A166G",
+              "T179C",
+              "A187G",
+              "T232C",
+              "G265A",
+              "A289G",
+              "A292G",
+              "C307T",
+              "A330G",
+              "T340C",
+              "A361G",
+              "A388G",
+              "A416C",
+              "A451T",
+              "C523A",
+              "A532G",
+              "A555G",
+              "G565C",
+              "C586T",
+              "C603A",
+              "G613A",
+              "C616T",
+              "C646A",
+              "G652A",
+              "G706A",
+              "A712G",
+              "G715A",
+              "T730C",
+              "C746T",
+              "T889C",
+              "A893G",
+              "G898A",
+              "T922C",
+              "C934T",
+              "A970G",
+              "A979G",
+              "A982G",
+              "A1038G",
+              "A1041G",
+              "A1047G",
+              "G1059T",
+              "A1089T",
+              "C1095T",
+              "T1167A",
+              "T1200C",
+              "C1230A",
+              "A1242G",
+              "A1263G",
+              "A1275G",
+              "T1314C",
+              "T1347C",
+              "A1353G",
+              "T1394C",
+              "C1401A",
+              "A1406G",
+              "C1418T",
+              "T1439C",
+              "T1448C",
+              "A1490G",
+              "A1502G",
+              "G1514T",
+              "A1517G",
+              "G1571A",
+              "A1640G",
+              "T1650C",
+              "G1682A"
+            ]
+          }
+        },
+        "children": [
+          {
+            "name": "EPI_ISL_224722|A/Bar-headedGoose/Qinghai/BTY9-LU/2016|WildBird|Asia|Goose|2016-05-09",
+            "node_attrs": {
+              "div": 0.029281231553398554,
+              "num_date": {
+                "value": 2016.353825136612,
+                "confidence": [
+                  2016.353825136612,
+                  2016.353825136612
+                ]
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C250T",
+                  "A467G",
+                  "G901A",
+                  "C907T",
+                  "C1511T"
+                ]
+              }
+            }
+          },
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.026343954336036937,
+              "num_date": {
+                "value": 2016.089084358271,
+                "confidence": [
+                  2015.731246676148,
+                  2016.3630585847716
+                ]
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A9C",
+                  "C454T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.026929768746114153,
+                  "num_date": {
+                    "value": 2016.3427421287895,
+                    "confidence": [
+                      2015.8410106448507,
+                      2016.4979733566342
+                    ]
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G296A"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "EPI_ISL_18211466|A/Chicken/Pakistan/501/2018|LivestockAvian|Asia|Chicken|2018-02-11",
+                    "node_attrs": {
+                      "div": 0.041745903513463925,
+                      "num_date": {
+                        "value": 2018.113698630137,
+                        "confidence": [
+                          2018.113698630137,
+                          2018.113698630137
+                        ]
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G13A",
+                          "C16T",
+                          "A34G",
+                          "G193A",
+                          "T203C",
+                          "C253T",
+                          "C283T",
+                          "A312G",
+                          "C358T",
+                          "G439A",
+                          "T487C",
+                          "G555A",
+                          "G574A",
+                          "T589C",
+                          "A748G",
+                          "A808G",
+                          "A826G",
+                          "A880G",
+                          "A1109T",
+                          "G1122T",
+                          "C1155A",
+                          "T1203A",
+                          "T1361C",
+                          "A1493G",
+                          "A1540G"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 0.03045318365082691,
+                      "num_date": {
+                        "value": 2017.433595140553,
+                        "confidence": [
+                          2016.9812846512068,
+                          2017.645144730816
+                        ]
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A155G",
+                          "C179T",
+                          "A200G",
+                          "T718G",
+                          "G991A",
+                          "G1128A"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "EPI_ISL_369350|A/Chicken/SouthAfrica/17080561/2017|LivestockAvian|Africa|Chicken|2017-08-29",
+                        "node_attrs": {
+                          "div": 0.031039059745454796,
+                          "num_date": {
+                            "value": 2017.658904109589,
+                            "confidence": [
+                              2017.658904109589,
+                              2017.658904109589
+                            ]
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T1520C"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "EPI_ISL_681272|A/Chicken/Kagawa/F3C/2020|LivestockAvian|Asia|Chicken|2020-11-19",
+                        "node_attrs": {
+                          "div": 0.04768844453992635,
+                          "num_date": {
+                            "value": 2020.8838797814208,
+                            "confidence": [
+                              2020.8838797814208,
+                              2020.8838797814208
+                            ]
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G54A",
+                              "G90A",
+                              "T96C",
+                              "G193A",
+                              "G208T",
+                              "G289A",
+                              "G352A",
+                              "T376A",
+                              "A436G",
+                              "C511T",
+                              "G537A",
+                              "C600A",
+                              "C619A",
+                              "A652G",
+                              "A661G",
+                              "C709T",
+                              "A715G",
+                              "G754A",
+                              "C946A",
+                              "T1050G",
+                              "T1062C",
+                              "A1149G",
+                              "G1204A",
+                              "A1296G",
+                              "C1330T",
+                              "G1506T",
+                              "A1544G",
+                              "A1568G",
+                              "C1667T"
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000006",
+                "node_attrs": {
+                  "div": 0.028690238768890954,
+                  "num_date": {
+                    "value": 2016.3519839516714,
+                    "confidence": [
+                      2016.1314678476813,
+                      2016.735473723222
+                    ]
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C301T",
+                      "C769T",
+                      "A852G",
+                      "G1451A"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "EPI_ISL_389755|A/Chicken/Egypt/Q13944C/2017|LivestockAvian|Africa|Chicken|2017-04-12",
+                    "node_attrs": {
+                      "div": 0.0333943217539111,
+                      "num_date": {
+                        "value": 2017.2780821917809,
+                        "confidence": [
+                          2017.2780821917809,
+                          2017.2780821917809
+                        ]
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C81T",
+                          "G166A",
+                          "G490A",
+                          "A517G",
+                          "A742T",
+                          "T1248C",
+                          "A1493G",
+                          "G1562A"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000007",
+                    "node_attrs": {
+                      "div": 0.029862952621289598,
+                      "num_date": {
+                        "value": 2016.6664112455044,
+                        "confidence": [
+                          2016.35251058327,
+                          2016.9596188220637
+                        ]
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T1059G",
+                          "G1641A"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "EPI_ISL_316558|A/Duck/Italy/17VIR9533/2017|OtherBird|Europe|Duck|2017-10-25",
+                        "node_attrs": {
+                          "div": 0.03871196894771048,
+                          "num_date": {
+                            "value": 2017.8150684931506,
+                            "confidence": [
+                              2017.8150684931506,
+                              2017.8150684931506
+                            ]
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T41C",
+                              "C232T",
+                              "T307C",
+                              "C340T",
+                              "G580A",
+                              "T583C",
+                              "A697G",
+                              "T883C",
+                              "A898T",
+                              "A919G",
+                              "G991T",
+                              "A1015T",
+                              "T1179C",
+                              "A1284G",
+                              "A1607G"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000008",
+                        "node_attrs": {
+                          "div": 0.04470588729118479,
+                          "num_date": {
+                            "value": 2020.473128804365,
+                            "confidence": [
+                              2020.3447066456288,
+                              2020.6300009991048
+                            ]
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G15A",
+                              "C81T",
+                              "C175T",
+                              "T280C",
+                              "T412C",
+                              "C418A",
+                              "T434C",
+                              "A467G",
+                              "A493G",
+                              "T640C",
+                              "A661T",
+                              "A673G",
+                              "A755G",
+                              "C907T",
+                              "T928C",
+                              "C946T",
+                              "G1038C",
+                              "T1050G",
+                              "G1197A",
+                              "C1370T",
+                              "G1406A",
+                              "T1442C",
+                              "T1466C",
+                              "A1589G",
+                              "T1612C"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "EPI_ISL_1789695|A/GreySeal/SVA210406SZ0066/KN001401/2021|WildMammal|Europe|Seal|2021-03-18",
+                            "node_attrs": {
+                              "div": 0.047638942712168404,
+                              "num_date": {
+                                "value": 2021.2095890410958,
+                                "confidence": [
+                                  2021.2095890410958,
+                                  2021.2095890410958
+                                ]
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "A706G",
+                                  "C889T",
+                                  "C1200A",
+                                  "T1376C",
+                                  "T1412C"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "name": "EPI_ISL_1139032|A/barnacleGoose/Netherlands/20017159-006/2020|WildBird|Europe|Goose|2020-11-04",
+                            "node_attrs": {
+                              "div": 0.045878361127827394,
+                              "num_date": {
+                                "value": 2020.8428961748634,
+                                "confidence": [
+                                  2020.8428961748634,
+                                  2020.8428961748634
+                                ]
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "T1014A",
+                                  "G1382A"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "name": "NODE_0000011",
+                            "node_attrs": {
+                              "div": 0.04763944543085217,
+                              "num_date": {
+                                "value": 2020.7649931386156,
+                                "confidence": [
+                                  2020.6301388188638,
+                                  2020.9913787331946
+                                ]
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C412A",
+                                  "T421C",
+                                  "C612T",
+                                  "G970A",
+                                  "T1044C"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "EPI_ISL_13295170|A/Duck/Cambodia/f6T241D4/2021|OtherBird|Asia|Duck|2021-11-16",
+                                "node_attrs": {
+                                  "div": 0.05648724228897671,
+                                  "num_date": {
+                                    "value": 2021.8753424657534,
+                                    "confidence": [
+                                      2021.8753424657534,
+                                      2021.8753424657534
+                                    ]
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "A93G",
+                                      "G102A",
+                                      "G193A",
+                                      "A238G",
+                                      "C572T",
+                                      "G673A",
+                                      "T841C",
+                                      "G857A",
+                                      "C866A",
+                                      "A892T",
+                                      "A975G",
+                                      "T994G",
+                                      "G1502A",
+                                      "A1541G",
+                                      "C1556T"
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                "name": "NODE_0000012",
+                                "node_attrs": {
+                                  "div": 0.04822520746386461,
+                                  "num_date": {
+                                    "value": 2020.8793731960006,
+                                    "confidence": [
+                                      2020.7173994053746,
+                                      2021.1259123399977
+                                    ]
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G1643A"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "EPI_ISL_11208197|A/Duck/Hunan/S40268/2021(H5N6)|OtherBird|Asia|Duck|2021-12-01",
+                                    "node_attrs": {
+                                      "div": 0.05588736818857873,
+                                      "num_date": {
+                                        "value": 2021.9164383561645,
+                                        "confidence": [
+                                          2021.9164383561645,
+                                          2021.9164383561645
+                                        ]
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "C179T",
+                                          "A181G",
+                                          "G289A",
+                                          "C397T",
+                                          "A436T",
+                                          "T583C",
+                                          "T691A",
+                                          "T862C",
+                                          "A1161G",
+                                          "A1254G",
+                                          "A1475C",
+                                          "G1613A",
+                                          "T1656C"
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "name": "EPI_ISL_4568642|A/Human/Hunan/09285/2021|Human|Asia|Human|2021-08-07",
+                                    "node_attrs": {
+                                      "div": 0.05292956183229648,
+                                      "num_date": {
+                                        "value": 2021.5986301369862,
+                                        "confidence": [
+                                          2021.5986301369862,
+                                          2021.5986301369862
+                                        ]
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "T196C",
+                                          "A220G",
+                                          "A714T",
+                                          "G1041T",
+                                          "C1308A",
+                                          "A1326G",
+                                          "C1448T",
+                                          "A1535G"
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000013",
+                            "node_attrs": {
+                              "div": 0.045877637133819496,
+                              "num_date": {
+                                "value": 2020.582759152893,
+                                "confidence": [
+                                  2020.504497395309,
+                                  2020.7318053119302
+                                ]
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "A293C",
+                                  "C1110T"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000014",
+                                "node_attrs": {
+                                  "div": 0.04646315713211298,
+                                  "num_date": {
+                                    "value": 2020.6871377308346,
+                                    "confidence": [
+                                      2020.5987192546722,
+                                      2020.7934427729347
+                                    ]
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "C331T"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "EPI_ISL_18953098|A/barnacle_Goose/Denmark/14600-2/2020|WildBird|Europe|Goose|2020-11-07",
+                                    "node_attrs": {
+                                      "div": 0.04822143607997393,
+                                      "num_date": {
+                                        "value": 2020.8510928961748,
+                                        "confidence": [
+                                          2020.8510928961748,
+                                          2020.8510928961748
+                                        ]
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "A679G",
+                                          "G1008A",
+                                          "G1059A"
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000015",
+                                    "node_attrs": {
+                                      "div": 0.047048771634999806,
+                                      "num_date": {
+                                        "value": 2020.8450810532902,
+                                        "confidence": [
+                                          2020.7249155907807,
+                                          2021.0356845708661
+                                        ]
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "G90A"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "EPI_ISL_17414603|A/avian/Nigeria/VRD-21-053_21RS744-70/2021|OtherBird|Africa|Avian|2021-02-11",
+                                        "node_attrs": {
+                                          "div": 0.047634761863072556,
+                                          "num_date": {
+                                            "value": 2021.113698630137,
+                                            "confidence": [
+                                              2021.113698630137,
+                                              2021.113698630137
+                                            ]
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "G555A"
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "name": "EPI_ISL_15839841|A/Africanpenguin/SouthAfrica/21100423D/2021|WildBird|Africa|Penguin|2021-10-26",
+                                        "node_attrs": {
+                                          "div": 0.05353374613276089,
+                                          "num_date": {
+                                            "value": 2021.817808219178,
+                                            "confidence": [
+                                              2021.817808219178,
+                                              2021.817808219178
+                                            ]
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "G25A",
+                                              "C136T",
+                                              "G271C",
+                                              "T478C",
+                                              "A559G",
+                                              "G602A",
+                                              "A646G",
+                                              "G754A",
+                                              "A1152G",
+                                              "A1332C",
+                                              "A1703G"
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000016",
+                                "node_attrs": {
+                                  "div": 0.04704906784535761,
+                                  "num_date": {
+                                    "value": 2020.6828224784108,
+                                    "confidence": [
+                                      2020.599006058768,
+                                      2020.8055332595104
+                                    ]
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G754A",
+                                      "A1703G"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "EPI_ISL_17415170|A/avian/Nigeria/271PT_22VIR3286-71/2021|OtherBird|Africa|Avian|2021-01-01",
+                                    "node_attrs": {
+                                      "div": 0.05234091314235877,
+                                      "num_date": {
+                                        "value": 2021.0013698630137,
+                                        "confidence": [
+                                          2021.0013698630137,
+                                          2021.0013698630137
+                                        ]
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "G187A",
+                                          "A433G",
+                                          "G515T",
+                                          "G555A",
+                                          "G672T",
+                                          "T781C",
+                                          "A1170C",
+                                          "G1392A",
+                                          "G1502T"
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000018",
+                                    "node_attrs": {
+                                      "div": 0.04822048582812379,
+                                      "num_date": {
+                                        "value": 2020.9761028135506,
+                                        "confidence": [
+                                          2020.7915983101898,
+                                          2021.1578148985334
+                                        ]
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "A93G",
+                                          "C1439T"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "NODE_0000020",
+                                        "node_attrs": {
+                                          "div": 0.051152894271676644,
+                                          "num_date": {
+                                            "value": 2022.0650462760227,
+                                            "confidence": [
+                                              2021.7004102564144,
+                                              2022.176967169315
+                                            ]
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "G31A",
+                                              "T343C",
+                                              "T379C",
+                                              "A763C",
+                                              "G970A"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "EPI_ISL_19074717|A/murine/Hiroshima/TU10-B/2024|WildMammal|Asia|Murine|2024-03-12",
+                                            "node_attrs": {
+                                              "div": 0.053497467983077335,
+                                              "num_date": {
+                                                "value": 2024.1953551912568,
+                                                "confidence": [
+                                                  2024.1953551912568,
+                                                  2024.1953551912568
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "G469A",
+                                                  "C928T",
+                                                  "C1137T",
+                                                  "T1469C"
+                                                ]
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "name": "EPI_ISL_12174842|A/EzoredFox/Hokkaido/1/2022|WildMammal|Asia|Fox|2022-03-31",
+                                            "node_attrs": {
+                                              "div": 0.05290990979005811,
+                                              "num_date": {
+                                                "value": 2022.2452054794521,
+                                                "confidence": [
+                                                  2022.2452054794521,
+                                                  2022.2452054794521
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "T124C",
+                                                  "T337C",
+                                                  "A1023G"
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000021",
+                                        "node_attrs": {
+                                          "div": 0.05528222615832604,
+                                          "num_date": {
+                                            "value": 2022.2274719151612,
+                                            "confidence": [
+                                              2021.979018956623,
+                                              2022.4412356768785
+                                            ]
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "T42C",
+                                              "T72C",
+                                              "A151G",
+                                              "T211C",
+                                              "C297A",
+                                              "G469A",
+                                              "A509G",
+                                              "C667T",
+                                              "G673A",
+                                              "C709T",
+                                              "G1242A",
+                                              "G1506T"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "EPI_ISL_17075759|A/Human/Jiangsu/NJ210/2023|Human|Asia|Human|2023-02-10",
+                                            "node_attrs": {
+                                              "div": 0.05939229315067858,
+                                              "num_date": {
+                                                "value": 2023.1109589041096,
+                                                "confidence": [
+                                                  2023.1109589041096,
+                                                  2023.1109589041096
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "G35A",
+                                                  "C592T",
+                                                  "C832T",
+                                                  "T1014C",
+                                                  "A1083G",
+                                                  "T1101C",
+                                                  "G1128A"
+                                                ]
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "name": "EPI_ISL_18472587|A/white-napedCrane/Kagoshima/KU-185/2022(H5N1)|WildBird|Asia|Crane|2022-12-07",
+                                            "node_attrs": {
+                                              "div": 0.05998501670500092,
+                                              "num_date": {
+                                                "value": 2022.9328767123288,
+                                                "confidence": [
+                                                  2022.9328767123288,
+                                                  2022.9328767123288
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "T29C",
+                                                  "C163T",
+                                                  "C293A",
+                                                  "G755A",
+                                                  "C868A",
+                                                  "C1299T",
+                                                  "C1385T",
+                                                  "T1487C"
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000022",
+                                        "node_attrs": {
+                                          "div": 0.04997872680771735,
+                                          "num_date": {
+                                            "value": 2021.3469059963752,
+                                            "confidence": [
+                                              2021.1736953085765,
+                                              2021.5710213473762
+                                            ]
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "C179T",
+                                              "C811T",
+                                              "G1643A"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "EPI_ISL_14760562|A/Duck/Italy/21VIR9373-2/2021|OtherBird|Europe|Duck|2021-11-09",
+                                            "node_attrs": {
+                                              "div": 0.05056480320591298,
+                                              "num_date": {
+                                                "value": 2021.8561643835617,
+                                                "confidence": [
+                                                  2021.8561643835617,
+                                                  2021.8561643835617
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "A457T"
+                                                ]
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000023",
+                                            "node_attrs": {
+                                              "div": 0.051738330923635126,
+                                              "num_date": {
+                                                "value": 2021.5523023846922,
+                                                "confidence": [
+                                                  2021.3816439488512,
+                                                  2021.7056068454665
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "T29C",
+                                                  "T307C",
+                                                  "T796A"
+                                                ]
+                                              }
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "EPI_ISL_18462535|A/white-faced_whistling_Duck/Nigeria/VRD22-305-Dal13_23VIR8254-108/2022|WildBird|Africa|Duck|2022-03-01",
+                                                "node_attrs": {
+                                                  "div": 0.05762102001160309,
+                                                  "num_date": {
+                                                    "value": 2022.16301369863,
+                                                    "confidence": [
+                                                      2022.16301369863,
+                                                      2022.16301369863
+                                                    ]
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {
+                                                    "nuc": [
+                                                      "G94A",
+                                                      "G439A",
+                                                      "C455T",
+                                                      "C637T",
+                                                      "G761A",
+                                                      "C772T",
+                                                      "A879G",
+                                                      "A1463G",
+                                                      "A1559T",
+                                                      "T1601C"
+                                                    ]
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "name": "EPI_ISL_9029956|A/Chicken/England/057314/2021|LivestockAvian|Europe|Chicken|2021-11-14",
+                                                "node_attrs": {
+                                                  "div": 0.05408456785527051,
+                                                  "num_date": {
+                                                    "value": 2021.8698630136987,
+                                                    "confidence": [
+                                                      2021.8698630136987,
+                                                      2021.8698630136987
+                                                    ]
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {
+                                                    "nuc": [
+                                                      "G31A",
+                                                      "G491T",
+                                                      "C572T",
+                                                      "T1418C"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "name": "NODE_0000025",
+                                            "node_attrs": {
+                                              "div": 0.050564517237082156,
+                                              "num_date": {
+                                                "value": 2021.5599872731618,
+                                                "confidence": [
+                                                  2021.408087654683,
+                                                  2021.7354096575345
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "G607A"
+                                                ]
+                                              }
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "EPI_ISL_13369767|A/Turkey/England/059407/2021|LivestockAvian|Europe|Turkey|2021-11-20",
+                                                "node_attrs": {
+                                                  "div": 0.05349953844751189,
+                                                  "num_date": {
+                                                    "value": 2021.886301369863,
+                                                    "confidence": [
+                                                      2021.886301369863,
+                                                      2021.886301369863
+                                                    ]
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {
+                                                    "nuc": [
+                                                      "C91A",
+                                                      "G296A",
+                                                      "A304G",
+                                                      "T376C",
+                                                      "C772T"
+                                                    ]
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000027",
+                                                "node_attrs": {
+                                                  "div": 0.052324787604499094,
+                                                  "num_date": {
+                                                    "value": 2023.2902929995328,
+                                                    "confidence": [
+                                                      2023.063605567147,
+                                                      2023.478082191781
+                                                    ]
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {
+                                                    "nuc": [
+                                                      "G268A",
+                                                      "A448T",
+                                                      "G1555A"
+                                                    ]
+                                                  }
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "EPI_ISL_17971990|A/Domestic_cat/Poland/H256-G/2023(H5N1)|Pet|Europe|Cat|2023-06-24",
+                                                    "node_attrs": {
+                                                      "div": 0.052910710488905555,
+                                                      "num_date": {
+                                                        "value": 2023.478082191781,
+                                                        "confidence": [
+                                                          2023.478082191781,
+                                                          2023.478082191781
+                                                        ]
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {
+                                                        "nuc": [
+                                                          "A200G"
+                                                        ]
+                                                      }
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "EPI_ISL_18033410|A/Domestic_cat/Poland/H293-N/2023|Pet|Europe|Cat|2023-07-01",
+                                                    "node_attrs": {
+                                                      "div": 0.052324787604499136,
+                                                      "num_date": {
+                                                        "value": 2023.4972602739726,
+                                                        "confidence": [
+                                                          2023.4972602739726,
+                                                          2023.4972602739726
+                                                        ]
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "name": "NODE_0000028",
+                                                "node_attrs": {
+                                                  "div": 0.051736894687550945,
+                                                  "num_date": {
+                                                    "value": 2021.8066688431045,
+                                                    "confidence": [
+                                                      2021.6182870173197,
+                                                      2022.3465131590197
+                                                    ]
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {
+                                                    "nuc": [
+                                                      "G394T",
+                                                      "A1143G"
+                                                    ]
+                                                  }
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "NODE_0000029",
+                                                    "node_attrs": {
+                                                      "div": 0.055259783199977604,
+                                                      "num_date": {
+                                                        "value": 2022.6826925517064,
+                                                        "confidence": [
+                                                          2022.4409915693998,
+                                                          2022.7209704054032
+                                                        ]
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {
+                                                        "nuc": [
+                                                          "C520T",
+                                                          "G1050A",
+                                                          "C1347T",
+                                                          "C1379T",
+                                                          "A1406G",
+                                                          "C1448T"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "EPI_ISL_15542438|A/Human/CastillaLaMancha/3739/2022|Human|Europe|Human|2022-09-23",
+                                                        "node_attrs": {
+                                                          "div": 0.05584585856188214,
+                                                          "num_date": {
+                                                            "value": 2022.727397260274,
+                                                            "confidence": [
+                                                              2022.727397260274,
+                                                              2022.727397260274
+                                                            ]
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "A867G"
+                                                            ]
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "EPI_ISL_16813290|A/Human/CastillaLaMancha/3869/2022|Human|Europe|Human|2022-10-13",
+                                                        "node_attrs": {
+                                                          "div": 0.05584585856188214,
+                                                          "num_date": {
+                                                            "value": 2022.782191780822,
+                                                            "confidence": [
+                                                              2022.782191780822,
+                                                              2022.782191780822
+                                                            ]
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "A1592G"
+                                                            ]
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000030",
+                                                    "node_attrs": {
+                                                      "div": 0.05526014759865071,
+                                                      "num_date": {
+                                                        "value": 2022.7191136219697,
+                                                        "confidence": [
+                                                          2022.2017777330632,
+                                                          2023.1045500074997
+                                                        ]
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {
+                                                        "nuc": [
+                                                          "C78T",
+                                                          "A312G",
+                                                          "C550A",
+                                                          "C868T",
+                                                          "C1356T",
+                                                          "A1463G"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "EPI_ISL_18290476|A/arctic-Fox/Finland/1086/2023|WildMammal|Europe|Fox|2023-08-09",
+                                                        "node_attrs": {
+                                                          "div": 0.05878427276503777,
+                                                          "num_date": {
+                                                            "value": 2023.6041095890412,
+                                                            "confidence": [
+                                                              2023.6041095890412,
+                                                              2023.6041095890412
+                                                            ]
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "A263G",
+                                                              "G361A",
+                                                              "A835G",
+                                                              "G1050A",
+                                                              "C1191A",
+                                                              "T1329C"
+                                                            ]
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000031",
+                                                        "node_attrs": {
+                                                          "div": 0.06114376478537584,
+                                                          "num_date": {
+                                                            "value": 2023.7931506849316,
+                                                            "confidence": [
+                                                              2023.6668481786608,
+                                                              2023.7931506849316
+                                                            ]
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "G13T",
+                                                              "C434T",
+                                                              "T458C",
+                                                              "T694C",
+                                                              "G893A",
+                                                              "C990T",
+                                                              "A1209G",
+                                                              "A1535G",
+                                                              "C1623T",
+                                                              "G1679A"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "EPI_ISL_18771178|A/whitemink/Finland/UH-353-E1/2023|LivestockMammal|Europe|Mink|2023-10-17",
+                                                            "node_attrs": {
+                                                              "div": 0.06114376478537588,
+                                                              "num_date": {
+                                                                "value": 2023.7931506849316,
+                                                                "confidence": [
+                                                                  2023.7931506849316,
+                                                                  2023.7931506849316
+                                                                ]
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            }
+                                                          },
+                                                          {
+                                                            "name": "EPI_ISL_18771245|A/whitemink/Finland/UH-361-E1/2023|LivestockMammal|Europe|Mink|2023-10-17",
+                                                            "node_attrs": {
+                                                              "div": 0.06114376478537588,
+                                                              "num_date": {
+                                                                "value": 2023.7931506849316,
+                                                                "confidence": [
+                                                                  2023.7931506849316,
+                                                                  2023.7931506849316
+                                                                ]
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000032",
+                                    "node_attrs": {
+                                      "div": 0.05411619155725412,
+                                      "num_date": {
+                                        "value": 2022.0535943895657,
+                                        "confidence": [
+                                          2021.6117446378073,
+                                          2022.0942830040535
+                                        ]
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "T18A",
+                                          "T301C",
+                                          "C359A",
+                                          "T622C",
+                                          "T678C",
+                                          "T745C",
+                                          "A898T",
+                                          "A1143G",
+                                          "C1404T",
+                                          "C1466T",
+                                          "A1575G",
+                                          "G1616A"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "NODE_0000033",
+                                        "node_attrs": {
+                                          "div": 0.05470159125988023,
+                                          "num_date": {
+                                            "value": 2022.0776095649928,
+                                            "confidence": [
+                                              2021.9427231388304,
+                                              2022.209505439508
+                                            ]
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "C118T"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "EPI_ISL_18133353|A/Duck/Indiana/USDA-011343-001/2022|OtherBird|NorthAmerica|Duck|2022-04-12",
+                                            "node_attrs": {
+                                              "div": 0.0564600826425933,
+                                              "num_date": {
+                                                "value": 2022.2780821917809,
+                                                "confidence": [
+                                                  2022.2780821917809,
+                                                  2022.2780821917809
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "A688T",
+                                                  "T1224C",
+                                                  "A1580G"
+                                                ]
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "name": "EPI_ISL_16171496|A/Duck/Wisconsin/22-013373-001-original/2022|OtherBird|NorthAmerica|Duck|2022-04-30",
+                                            "node_attrs": {
+                                              "div": 0.055872779897259334,
+                                              "num_date": {
+                                                "value": 2022.327397260274,
+                                                "confidence": [
+                                                  2022.327397260274,
+                                                  2022.327397260274
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "T458C",
+                                                  "T1179C"
+                                                ]
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "name": "EPI_ISL_18132794|A/BaldEagle/Minnesota/USDA-011695-001/2022|WildBird|NorthAmerica|Eagle|2022-04-14",
+                                            "node_attrs": {
+                                              "div": 0.055872944516006905,
+                                              "num_date": {
+                                                "value": 2022.2835616438356,
+                                                "confidence": [
+                                                  2022.2835616438356,
+                                                  2022.2835616438356
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "A112G",
+                                                  "C197T"
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000035",
+                                        "node_attrs": {
+                                          "div": 0.05470159125988023,
+                                          "num_date": {
+                                            "value": 2022.0587741098814,
+                                            "confidence": [
+                                              2022.0182280280035,
+                                              2022.2451798530326
+                                            ]
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "C400T"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "EPI_ISL_18132805|A/Turkey/SouthDakota/USDA-010138-001/2022|LivestockAvian|NorthAmerica|Turkey|2022-04-04",
+                                            "node_attrs": {
+                                              "div": 0.05587295727932302,
+                                              "num_date": {
+                                                "value": 2022.2561643835616,
+                                                "confidence": [
+                                                  2022.2561643835616,
+                                                  2022.2561643835616
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "A265G",
+                                                  "G1104A"
+                                                ]
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "name": "EPI_ISL_16240885|A/Chicken/Wisconsin/22-014859-001-original/2022|LivestockAvian|NorthAmerica|Chicken|2022-05-11",
+                                            "node_attrs": {
+                                              "div": 0.0570462503932108,
+                                              "num_date": {
+                                                "value": 2022.3575342465754,
+                                                "confidence": [
+                                                  2022.3575342465754,
+                                                  2022.3575342465754
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "C250T",
+                                                  "T1012C",
+                                                  "T1457C",
+                                                  "A1474C"
+                                                ]
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "name": "EPI_ISL_12799972|A/Human/Colorado/18/2022|Human|NorthAmerica|Human|2022-04-20",
+                                            "node_attrs": {
+                                              "div": 0.05528735442992373,
+                                              "num_date": {
+                                                "value": 2022.3,
+                                                "confidence": [
+                                                  2022.3,
+                                                  2022.3
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "C1512T"
+                                                ]
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "name": "EPI_ISL_17821929|A/cat/Nebraska/23-001172-001-original/2023|Pet|NorthAmerica|Cat|2023-01-10",
+                                            "node_attrs": {
+                                              "div": 0.06058243528422061,
+                                              "num_date": {
+                                                "value": 2023.0260273972603,
+                                                "confidence": [
+                                                  2023.0260273972603,
+                                                  2023.0260273972603
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "C69T",
+                                                  "C434T",
+                                                  "T583C",
+                                                  "G854T",
+                                                  "C943A",
+                                                  "G991A",
+                                                  "A1023G",
+                                                  "G1050T",
+                                                  "T1179C",
+                                                  "T1245C"
+                                                ]
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000040",
+                                            "node_attrs": {
+                                              "div": 0.0552874386783207,
+                                              "num_date": {
+                                                "value": 2022.2333576281078,
+                                                "confidence": [
+                                                  2022.0986818982874,
+                                                  2022.3382297508158
+                                                ]
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "T196A"
+                                                ]
+                                              }
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "EPI_ISL_16023371|A/RedFox/AB/FAV-0835-13/2022|WildMammal|NorthAmerica|Fox|2022-06-10",
+                                                "node_attrs": {
+                                                  "div": 0.05528743867832074,
+                                                  "num_date": {
+                                                    "value": 2022.4397260273972,
+                                                    "confidence": [
+                                                      2022.4397260273972,
+                                                      2022.4397260273972
+                                                    ]
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000041",
+                                                "node_attrs": {
+                                                  "div": 0.058222274613544955,
+                                                  "num_date": {
+                                                    "value": 2022.5041122115417,
+                                                    "confidence": [
+                                                      2022.3024587003654,
+                                                      2022.7109252967568
+                                                    ]
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {
+                                                    "nuc": [
+                                                      "T393A",
+                                                      "C550T",
+                                                      "T781C",
+                                                      "C1038T",
+                                                      "G1685A"
+                                                    ]
+                                                  }
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "NODE_0000042",
+                                                    "node_attrs": {
+                                                      "div": 0.06528626654738096,
+                                                      "num_date": {
+                                                        "value": 2023.7677360782611,
+                                                        "confidence": [
+                                                          2023.6494951631887,
+                                                          2024.2153365018999
+                                                        ]
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {
+                                                        "nuc": [
+                                                          "C172A",
+                                                          "T175C",
+                                                          "T178C",
+                                                          "T211C",
+                                                          "T214C",
+                                                          "C280T",
+                                                          "G469A",
+                                                          "C633T",
+                                                          "C820T",
+                                                          "A835G",
+                                                          "C922T",
+                                                          "G970A"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "EPI_ISL_19027114|A/Human/Texas/37/2024|Human|NorthAmerica|Human|2024-03-28",
+                                                        "node_attrs": {
+                                                          "div": 0.0658725838831313,
+                                                          "num_date": {
+                                                            "value": 2024.2390710382513,
+                                                            "confidence": [
+                                                              2024.2390710382513,
+                                                              2024.2390710382513
+                                                            ]
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "A802G"
+                                                            ]
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000043",
+                                                        "node_attrs": {
+                                                          "div": 0.06645928941862296,
+                                                          "num_date": {
+                                                            "value": 2024.143060279333,
+                                                            "confidence": [
+                                                              2024.0036563904137,
+                                                              2024.1971083369738
+                                                            ]
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "C868T",
+                                                              "C1314A"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "EPI_ISL_19094615|A/dairycattle/Texas/24_009367-003/2024|LivestockMammal|NorthAmerica|DairyCattle|2024-03-25",
+                                                            "node_attrs": {
+                                                              "div": 0.06763245747776263,
+                                                              "num_date": {
+                                                                "value": 2024.23087431694,
+                                                                "confidence": [
+                                                                  2024.23087431694,
+                                                                  2024.23087431694
+                                                                ]
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {
+                                                                "nuc": [
+                                                                  "A1565G",
+                                                                  "T1636G"
+                                                                ]
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "name": "EPI_ISL_19094660|A/Domesticcat/Oklahoma/24_009118-002/2024|Pet|NorthAmerica|Cat|2024-03-20",
+                                                            "node_attrs": {
+                                                              "div": 0.06704576132057262,
+                                                              "num_date": {
+                                                                "value": 2024.217213114754,
+                                                                "confidence": [
+                                                                  2024.217213114754,
+                                                                  2024.217213114754
+                                                                ]
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {
+                                                                "nuc": [
+                                                                  "C522A"
+                                                                ]
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "name": "NODE_0000034",
+                                                            "node_attrs": {
+                                                              "div": 0.066459289418623,
+                                                              "num_date": {
+                                                                "value": 2024.2048780031391,
+                                                                "confidence": [
+                                                                  2024.1279666525948,
+                                                                  2024.2226775956285
+                                                                ]
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "EPI_ISL_19054391|A/feline/Texas/24-008764-002-original/2024|WildMammal|NorthAmerica|Feline|2024-03-22",
+                                                                "node_attrs": {
+                                                                  "div": 0.06645928941862304,
+                                                                  "num_date": {
+                                                                    "value": 2024.2226775956285,
+                                                                    "confidence": [
+                                                                      2024.2226775956285,
+                                                                      2024.2226775956285
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "EPI_ISL_19094696|A/dairycattle/Michigan/24_010071-003/2024|LivestockMammal|NorthAmerica|DairyCattle|2024-04-01",
+                                                                "node_attrs": {
+                                                                  "div": 0.06645928941862304,
+                                                                  "num_date": {
+                                                                    "value": 2024.25,
+                                                                    "confidence": [
+                                                                      2024.25,
+                                                                      2024.25
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000046",
+                                                    "node_attrs": {
+                                                      "div": 0.05880808560656959,
+                                                      "num_date": {
+                                                        "value": 2022.6803191135036,
+                                                        "confidence": [
+                                                          2022.4297286477886,
+                                                          2022.7408112126386
+                                                        ]
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {
+                                                        "nuc": [
+                                                          "C179T"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "EPI_ISL_16157545|A/Chicken/Ecuador/02/2022|LivestockAvian|SouthAmerica|Chicken|2022-11-25",
+                                                        "node_attrs": {
+                                                          "div": 0.06174295349631036,
+                                                          "num_date": {
+                                                            "value": 2022.9,
+                                                            "confidence": [
+                                                              2022.9,
+                                                              2022.9
+                                                            ]
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "T51C",
+                                                              "A238G",
+                                                              "G295A",
+                                                              "C736T",
+                                                              "G901T"
+                                                            ]
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000047",
+                                                        "node_attrs": {
+                                                          "div": 0.05998047618653874,
+                                                          "num_date": {
+                                                            "value": 2022.8877984646863,
+                                                            "confidence": [
+                                                              2022.7044440671057,
+                                                              2022.8972602739725
+                                                            ]
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "G607A",
+                                                              "G1104A"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "EPI_ISL_18054506|A/Pelican/Peru/PIU-019/2022|WildBird|SouthAmerica|Pelican|2022-11-24",
+                                                            "node_attrs": {
+                                                              "div": 0.05998047618653878,
+                                                              "num_date": {
+                                                                "value": 2022.8972602739725,
+                                                                "confidence": [
+                                                                  2022.8972602739725,
+                                                                  2022.8972602739725
+                                                                ]
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            }
+                                                          },
+                                                          {
+                                                            "name": "NODE_0000048",
+                                                            "node_attrs": {
+                                                              "div": 0.06115306731346132,
+                                                              "num_date": {
+                                                                "value": 2023.0705501020827,
+                                                                "confidence": [
+                                                                  2022.8965946002925,
+                                                                  2023.094772016108
+                                                                ]
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {
+                                                                "nuc": [
+                                                                  "A45G",
+                                                                  "G169A"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "EPI_ISL_18054509|A/sealion/Peru/AQP-SER00K/2023|WildMammal|SouthAmerica|SeaLion|2023-02-07",
+                                                                "node_attrs": {
+                                                                  "div": 0.06173907298559495,
+                                                                  "num_date": {
+                                                                    "value": 2023.1027397260275,
+                                                                    "confidence": [
+                                                                      2023.1027397260275,
+                                                                      2023.1027397260275
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {
+                                                                    "nuc": [
+                                                                      "A1109G"
+                                                                    ]
+                                                                  }
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "NODE_0000049",
+                                                                "node_attrs": {
+                                                                  "div": 0.06173907896213504,
+                                                                  "num_date": {
+                                                                    "value": 2023.2260273972602,
+                                                                    "confidence": [
+                                                                      2023.0975026992112,
+                                                                      2023.2260273972602
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {
+                                                                    "nuc": [
+                                                                      "T583C"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "name": "EPI_ISL_18690733|A/sealion/Biobio/SJCEIRR-2462961/2023|WildMammal|SouthAmerica|SeaLion|2023-03-26",
+                                                                    "node_attrs": {
+                                                                      "div": 0.06173907896213508,
+                                                                      "num_date": {
+                                                                        "value": 2023.231506849315,
+                                                                        "confidence": [
+                                                                          2023.231506849315,
+                                                                          2023.231506849315
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "EPI_ISL_17468386|A/Human/Chile/25945/2023|Human|SouthAmerica|Human|2023-03-24",
+                                                                    "node_attrs": {
+                                                                      "div": 0.06173907896213508,
+                                                                      "num_date": {
+                                                                        "value": 2023.2260273972602,
+                                                                        "confidence": [
+                                                                          2023.2260273972602,
+                                                                          2023.2260273972602
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "name": "NODE_0000051",
+                                                            "node_attrs": {
+                                                              "div": 0.06056657603217716,
+                                                              "num_date": {
+                                                                "value": 2022.8964056234079,
+                                                                "confidence": [
+                                                                  2022.779168386963,
+                                                                  2023.0990493305144
+                                                                ]
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {
+                                                                "nuc": [
+                                                                  "C241T"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "EPI_ISL_18698502|A/Chicken/Argentina/919-3/2023|LivestockAvian|SouthAmerica|Chicken|2023-03-13",
+                                                                "node_attrs": {
+                                                                  "div": 0.06173953190095817,
+                                                                  "num_date": {
+                                                                    "value": 2023.195890410959,
+                                                                    "confidence": [
+                                                                      2023.195890410959,
+                                                                      2023.195890410959
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {
+                                                                    "nuc": [
+                                                                      "G84A",
+                                                                      "C1116T"
+                                                                    ]
+                                                                  }
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "NODE_0000052",
+                                                                "node_attrs": {
+                                                                  "div": 0.061152878907565496,
+                                                                  "num_date": {
+                                                                    "value": 2023.0706248698789,
+                                                                    "confidence": [
+                                                                      2022.9633248093714,
+                                                                      2023.193006600664
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {
+                                                                    "nuc": [
+                                                                      "G469T"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "name": "EPI_ISL_18310960|A/backyardDuck/Uruguay/UDELAR-124-M3/2023|WildBird|SouthAmerica|Duck|2023-04-16",
+                                                                    "node_attrs": {
+                                                                      "div": 0.062325940973836515,
+                                                                      "num_date": {
+                                                                        "value": 2023.2890410958903,
+                                                                        "confidence": [
+                                                                          2023.2890410958903,
+                                                                          2023.2890410958903
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {
+                                                                        "nuc": [
+                                                                          "G296T",
+                                                                          "T787C"
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "EPI_ISL_18698523|A/Duck/Argentina/2197-1/2023|OtherBird|SouthAmerica|Duck|2023-05-11",
+                                                                    "node_attrs": {
+                                                                      "div": 0.06232647305522122,
+                                                                      "num_date": {
+                                                                        "value": 2023.3575342465754,
+                                                                        "confidence": [
+                                                                          2023.3575342465754,
+                                                                          2023.3575342465754
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {
+                                                                        "nuc": [
+                                                                          "A1018T",
+                                                                          "C1347T"
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "EPI_ISL_18698516|A/Avian/Argentina/1762-2/2023|OtherBird|SouthAmerica|Avian|2023-04-21",
+                                                                    "node_attrs": {
+                                                                      "div": 0.062912712449786,
+                                                                      "num_date": {
+                                                                        "value": 2023.3027397260273,
+                                                                        "confidence": [
+                                                                          2023.3027397260273,
+                                                                          2023.3027397260273
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {
+                                                                        "nuc": [
+                                                                          "T376C",
+                                                                          "T544C",
+                                                                          "C622T"
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "NODE_0000055",
+                                                                    "node_attrs": {
+                                                                      "div": 0.06408880983788305,
+                                                                      "num_date": {
+                                                                        "value": 2023.6694595636084,
+                                                                        "confidence": [
+                                                                          2023.432595437237,
+                                                                          2023.7367442139919
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {
+                                                                        "nuc": [
+                                                                          "C69T",
+                                                                          "T458C",
+                                                                          "C628T",
+                                                                          "G1263A",
+                                                                          "T1478C"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "name": "EPI_ISL_18439563|A/Brown_skua/Bird_Island/128288/2023|WildBird|Antarctica|Skua|2023-10-08",
+                                                                        "node_attrs": {
+                                                                          "div": 0.06526256417701898,
+                                                                          "num_date": {
+                                                                            "value": 2023.768493150685,
+                                                                            "confidence": [
+                                                                              2023.768493150685,
+                                                                              2023.768493150685
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {
+                                                                            "nuc": [
+                                                                              "T1014C",
+                                                                              "T1052A"
+                                                                            ]
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "name": "EPI_ISL_18439564|A/Brown_skua/Bird_Island/128289/2023|WildBird|Antarctica|Skua|2023-10-08",
+                                                                        "node_attrs": {
+                                                                          "div": 0.06408880983788309,
+                                                                          "num_date": {
+                                                                            "value": 2023.768493150685,
+                                                                            "confidence": [
+                                                                              2023.768493150685,
+                                                                              2023.768493150685
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

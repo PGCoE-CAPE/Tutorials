@@ -1,0 +1,47 @@
+LOCUS       HPAI_outgroup              1703 bp    RNA     linear   VRL 26-MAR-2015
+DEFINITION  HPAI virus isolate.
+ACCESSION   HPAI000001
+VERSION     HPAI000001.1
+KEYWORDS    .
+SOURCE      HPAI virus
+  ORGANISM  HPAI virus
+            Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Flavivirus.
+REFERENCE   1  (bases 1 to 1703)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUN-2024) tr44022@uga.edu
+FEATURES             Location/Qualifiers
+     source          1..1703
+                     /organism="HPAI virus"
+                     /mol_type="genomic RNA"
+ORIGIN
+        1 atggagaaaat agtgcttctt cttgcaatat gtagccttgt taaaggtgat cagatttgca
+       61 ttggttacca tgcaaacaac tcgacagagc aggttgaca cgtataatgg aaaagaacgt
+      121 cactgttaca catgcccaag acatactgga aaagacacac aatggaaagc tctgcgattt
+      181 aaatggagtg aagcctctga ttttaaagga ttgtagtgta gctggatggc ttctcggaaa
+      241 cccaatgtgc gacgaattca tcagggtgcc ggaatggtct tacatagtag aaaaggctaa
+      301 cccagccaat gacctctgtt acccaggaaa cctcaatgat tatgaagaat tgaaacacct
+      361 attgagcaga ataaatcatt ttgagaaaat tctgatcatc cccaagagtt cttggaccaa
+      421 tcatgaaaca tcattagggg tgagcgaggc atgcccatac cagggaacgc cctccttttt
+      481 cagaaatgtg gtatggctta tcaaaaagaa cgatgcatac cccacaataa aaataagcta
+      541 caataatacc aatcaggaag atctgttgat actgtggggg attcaccatt ccaacaatgc
+      601 agcagagcag acgaacctct ataaaaaccc aaccacctat atttccgttg ggacatcaac
+      661 attaaaccag agattggtgc caaaaatagc tactagatcc caagtgaatg gacagcgtgg
+      721 aagaatggat ttcttctgga caattctaaa accgaatgat gcaatccact tcgagagtaa
+      781 tggaaatttc attgctccag aatatgcata caaaattgtc aagaaagggg actcaacaat
+      841 tatgaaaagt gaagtggaat atggccactg taacaccaaa tgtcaaactc caataggggc
+      901 gataaactct agtatgccat ttcacaatat acaccctctc accatcgggg aatgccccaa
+      961 atacgtgaaa tcaaacaaat tagtccttgc gactgggctc agaaatagtc ctctaagaga
+     1021 aaagagaaga aaagaggact atttggagct atagcaggat ttatagaggg aggatggcag
+     1081 ggaatggtag atggctggtat gggtaccacc atagcaatga gcaggggagt gggtacgctg
+     1141 cagacaaaga atccacccaa aaggctatag atggagttac caataaggtc aactcgatta
+     1201 ttgacaaaat gaacactcaa tttgaggccg ttggaaggga atttaataac ttagaaagga
+     1261 gaatagagaa tttaaacaag aaaatggaag acggattcct agatgtctgg acttataatg
+     1321 ctgaacttct agttctcatg gaaaatgaga gaatctagat ttccatgact caaatgtcaa
+     1381 gaacctttat gataaagtcc gactacagct tagggacaat gcaaaggagc tgggtaatgg
+     1441 ttgttttgag ttctatcaca aatgtgatga tgaatgtatg gaaagtgtaa gaaatgggac
+     1501 atatgactac ccgcaatatt cagaagaagc aagattaaaa agagaagaag taagcggagt
+     1561 gaaattagag tcaatagga acttaccaaa tactgtcaat ttattcaaca gtggcgagtt
+     1621 ccctagcact ggcaatcata gtggctggtt tatctttatg gatgtgctcc aatgggtcgt
+     1681 tgcagtgcag aatttgcatt taa
+//

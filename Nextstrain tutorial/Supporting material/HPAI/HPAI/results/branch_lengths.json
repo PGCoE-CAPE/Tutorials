@@ -1,0 +1,1149 @@
+{
+  "alignment": "results/aligned.fasta",
+  "clock": {
+    "cov": [
+      [
+        3.7542481915527625e-07,
+        -0.000757409157757807
+      ],
+      [
+        -0.000757409157757807,
+        1.528063310823157
+      ]
+    ],
+    "intercept": -8.57393327005819,
+    "rate": 0.004266750044735557,
+    "rate_std": 0.0006127192009030534,
+    "rtt_Tmrca": 2009.476341515942
+  },
+  "generated_by": {
+    "program": "augur",
+    "version": "24.4.0"
+  },
+  "input_tree": "results/tree_raw.nwk",
+  "nodes": {
+    "EPI_ISL_11208197|A/Duck/Hunan/S40268/2021(H5N6)|OtherBird|Asia|Duck|2021-12-01": {
+      "branch_length": 0.004424897818522403,
+      "clock_length": 0.004424897818522403,
+      "date": "2021-12-01",
+      "mutation_length": 0.007662160724714116,
+      "num_date_confidence": [
+        2021.9164383561645,
+        2021.9164383561645
+      ],
+      "numdate": 2021.9164383561645,
+      "raw_date": "2021-12-01"
+    },
+    "EPI_ISL_1139032|A/barnacleGoose/Netherlands/20017159-006/2020|WildBird|Europe|Goose|2020-11-04": {
+      "branch_length": 0.001577704944615928,
+      "clock_length": 0.001577704944615928,
+      "date": "2020-11-04",
+      "mutation_length": 0.001172473836642604,
+      "num_date_confidence": [
+        2020.8428961748634,
+        2020.8428961748634
+      ],
+      "numdate": 2020.8428961748634,
+      "raw_date": "2020-11-04"
+    },
+    "EPI_ISL_12174842|A/EzoredFox/Hokkaido/1/2022|WildMammal|Asia|Fox|2022-03-31": {
+      "branch_length": 0.0007686942892918894,
+      "clock_length": 0.0007686942892918894,
+      "date": "2022-03-31",
+      "mutation_length": 0.0017570155183814612,
+      "num_date_confidence": [
+        2022.2452054794521,
+        2022.2452054794521
+      ],
+      "numdate": 2022.2452054794521,
+      "raw_date": "2022-03-31"
+    },
+    "EPI_ISL_12799972|A/Human/Colorado/18/2022|Human|NorthAmerica|Human|2022-04-20": {
+      "branch_length": 0.0010292505774549196,
+      "clock_length": 0.0010292505774549196,
+      "date": "2022-04-20",
+      "mutation_length": 0.0005857631700435061,
+      "num_date_confidence": [
+        2022.3,
+        2022.3
+      ],
+      "numdate": 2022.3,
+      "raw_date": "2022-04-20"
+    },
+    "EPI_ISL_13295170|A/Duck/Cambodia/f6T241D4/2021|OtherBird|Asia|Duck|2021-11-16": {
+      "branch_length": 0.004737583041237097,
+      "clock_length": 0.004737583041237097,
+      "date": "2021-11-16",
+      "mutation_length": 0.008847796858124543,
+      "num_date_confidence": [
+        2021.8753424657534,
+        2021.8753424657534
+      ],
+      "numdate": 2021.8753424657534,
+      "raw_date": "2021-11-16"
+    },
+    "EPI_ISL_13369767|A/Turkey/England/059407/2021|LivestockAvian|Europe|Turkey|2021-11-20": {
+      "branch_length": 0.0013923006866976041,
+      "clock_length": 0.0013923006866976041,
+      "date": "2021-11-20",
+      "mutation_length": 0.002935021210429733,
+      "num_date_confidence": [
+        2021.886301369863,
+        2021.886301369863
+      ],
+      "numdate": 2021.886301369863,
+      "raw_date": "2021-11-20"
+    },
+    "EPI_ISL_14760562|A/Duck/Italy/21VIR9373-2/2021|OtherBird|Europe|Duck|2021-11-09": {
+      "branch_length": 0.002172878246310286,
+      "clock_length": 0.002172878246310286,
+      "date": "2021-11-09",
+      "mutation_length": 0.0005860763981956267,
+      "num_date_confidence": [
+        2021.8561643835617,
+        2021.8561643835617
+      ],
+      "numdate": 2021.8561643835617,
+      "raw_date": "2021-11-09"
+    },
+    "EPI_ISL_15542438|A/Human/CastillaLaMancha/3739/2022|Human|Europe|Human|2022-09-23": {
+      "branch_length": 0.00019074381728088376,
+      "clock_length": 0.00019074381728088376,
+      "date": "2022-09-23",
+      "mutation_length": 0.0005860753619045398,
+      "num_date_confidence": [
+        2022.727397260274,
+        2022.727397260274
+      ],
+      "numdate": 2022.727397260274,
+      "raw_date": "2022-09-23"
+    },
+    "EPI_ISL_15839841|A/Africanpenguin/SouthAfrica/21100423D/2021|WildBird|Africa|Penguin|2021-10-26": {
+      "branch_length": 0.004150383678567099,
+      "clock_length": 0.004150383678567099,
+      "date": "2021-10-26",
+      "mutation_length": 0.00648497449776109,
+      "num_date_confidence": [
+        2021.817808219178,
+        2021.817808219178
+      ],
+      "numdate": 2021.817808219178,
+      "raw_date": "2021-10-26"
+    },
+    "EPI_ISL_16023371|A/RedFox/AB/FAV-0835-13/2022|WildMammal|NorthAmerica|Fox|2022-06-10": {
+      "branch_length": 0.0008805223769002141,
+      "clock_length": 0.0008805223769002141,
+      "date": "2022-06-10",
+      "mutation_length": 4.507426228403101e-17,
+      "num_date_confidence": [
+        2022.4397260273972,
+        2022.4397260273972
+      ],
+      "numdate": 2022.4397260273972,
+      "raw_date": "2022-06-10"
+    },
+    "EPI_ISL_16157545|A/Chicken/Ecuador/02/2022|LivestockAvian|SouthAmerica|Chicken|2022-11-25": {
+      "branch_length": 0.0009373234322859574,
+      "clock_length": 0.0009373234322859574,
+      "date": "2022-11-25",
+      "mutation_length": 0.002934867889740765,
+      "num_date_confidence": [
+        2022.9,
+        2022.9
+      ],
+      "numdate": 2022.9,
+      "raw_date": "2022-11-25"
+    },
+    "EPI_ISL_16171496|A/Duck/Wisconsin/22-013373-001-original/2022|OtherBird|NorthAmerica|Duck|2022-04-30": {
+      "branch_length": 0.0010657816600149871,
+      "clock_length": 0.0010657816600149871,
+      "date": "2022-04-30",
+      "mutation_length": 0.001171188637379107,
+      "num_date_confidence": [
+        2022.327397260274,
+        2022.327397260274
+      ],
+      "numdate": 2022.327397260274,
+      "raw_date": "2022-04-30"
+    },
+    "EPI_ISL_16240885|A/Chicken/Wisconsin/22-014859-001-original/2022|LivestockAvian|NorthAmerica|Chicken|2022-05-11": {
+      "branch_length": 0.0012747348266043956,
+      "clock_length": 0.0012747348266043956,
+      "date": "2022-05-11",
+      "mutation_length": 0.0023446591333305673,
+      "num_date_confidence": [
+        2022.3575342465754,
+        2022.3575342465754
+      ],
+      "numdate": 2022.3575342465754,
+      "raw_date": "2022-05-11"
+    },
+    "EPI_ISL_16813290|A/Human/CastillaLaMancha/3869/2022|Human|Europe|Human|2022-10-13": {
+      "branch_length": 0.00042453834027960085,
+      "clock_length": 0.00042453834027960085,
+      "date": "2022-10-13",
+      "mutation_length": 0.0005860753619045398,
+      "num_date_confidence": [
+        2022.782191780822,
+        2022.782191780822
+      ],
+      "numdate": 2022.782191780822,
+      "raw_date": "2022-10-13"
+    },
+    "EPI_ISL_17075759|A/Human/Jiangsu/NJ210/2023|Human|Asia|Human|2023-02-10": {
+      "branch_length": 0.003769618149618968,
+      "clock_length": 0.003769618149618968,
+      "date": "2023-02-10",
+      "mutation_length": 0.004110066992352543,
+      "num_date_confidence": [
+        2023.1109589041096,
+        2023.1109589041096
+      ],
+      "numdate": 2023.1109589041096,
+      "raw_date": "2023-02-10"
+    },
+    "EPI_ISL_17414603|A/avian/Nigeria/VRD-21-053_21RS744-70/2021|OtherBird|Africa|Avian|2021-02-11": {
+      "branch_length": 0.0011461240580273296,
+      "clock_length": 0.0011461240580273296,
+      "date": "2021-02-11",
+      "mutation_length": 0.0005859902280727499,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "EPI_ISL_17415170|A/avian/Nigeria/271PT_22VIR3286-71/2021|OtherBird|Africa|Avian|2021-01-01": {
+      "branch_length": 0.0013591620675048096,
+      "clock_length": 0.0013591620675048096,
+      "date": "2021-01-01",
+      "mutation_length": 0.005291845297001164,
+      "num_date_confidence": [
+        2021.0013698630137,
+        2021.0013698630137
+      ],
+      "numdate": 2021.0013698630137,
+      "raw_date": "2021-01-01"
+    },
+    "EPI_ISL_17468386|A/Human/Chile/25945/2023|Human|SouthAmerica|Human|2023-03-24": {
+      "branch_length": 0.0,
+      "clock_length": 0.0,
+      "date": "2023-03-24",
+      "mutation_length": 4.507426228403101e-17,
+      "num_date_confidence": [
+        2023.2260273972602,
+        2023.2260273972602
+      ],
+      "numdate": 2023.2260273972602,
+      "raw_date": "2023-03-24"
+    },
+    "EPI_ISL_177761|A/cat/Sichuan/SC18/2014|Pet|Asia|Cat|2014-05-02": {
+      "branch_length": 0.001505574972618287,
+      "clock_length": 0.001505574972618287,
+      "date": "2014-05-02",
+      "mutation_length": 0.0023524608947160775,
+      "num_date_confidence": [
+        2014.3328767123287,
+        2014.3328767123287
+      ],
+      "numdate": 2014.3328767123287,
+      "raw_date": "2014-05-02"
+    },
+    "EPI_ISL_17821929|A/cat/Nebraska/23-001172-001-original/2023|Pet|NorthAmerica|Cat|2023-01-10": {
+      "branch_length": 0.004127028007194951,
+      "clock_length": 0.004127028007194951,
+      "date": "2023-01-10",
+      "mutation_length": 0.0058808440243403835,
+      "num_date_confidence": [
+        2023.0260273972603,
+        2023.0260273972603
+      ],
+      "numdate": 2023.0260273972603,
+      "raw_date": "2023-01-10"
+    },
+    "EPI_ISL_1789695|A/GreySeal/SVA210406SZ0066/KN001401/2021|WildMammal|Europe|Seal|2021-03-18": {
+      "branch_length": 0.0031422917480171016,
+      "clock_length": 0.0031422917480171016,
+      "date": "2021-03-18",
+      "mutation_length": 0.0029330554209836155,
+      "num_date_confidence": [
+        2021.2095890410958,
+        2021.2095890410958
+      ],
+      "numdate": 2021.2095890410958,
+      "raw_date": "2021-03-18"
+    },
+    "EPI_ISL_17971990|A/Domestic_cat/Poland/H256-G/2023(H5N1)|Pet|Europe|Cat|2023-06-24": {
+      "branch_length": 0.0008012495444258347,
+      "clock_length": 0.0008012495444258347,
+      "date": "2023-06-24",
+      "mutation_length": 0.0005859228844064602,
+      "num_date_confidence": [
+        2023.478082191781,
+        2023.478082191781
+      ],
+      "numdate": 2023.478082191781,
+      "raw_date": "2023-06-24"
+    },
+    "EPI_ISL_18033410|A/Domestic_cat/Poland/H293-N/2023|Pet|Europe|Cat|2023-07-01": {
+      "branch_length": 0.0008830776274753368,
+      "clock_length": 0.0008830776274753368,
+      "date": "2023-07-01",
+      "mutation_length": 4.507426228403101e-17,
+      "num_date_confidence": [
+        2023.4972602739726,
+        2023.4972602739726
+      ],
+      "numdate": 2023.4972602739726,
+      "raw_date": "2023-07-01"
+    },
+    "EPI_ISL_18054506|A/Pelican/Peru/PIU-019/2022|WildBird|SouthAmerica|Pelican|2022-11-24": {
+      "branch_length": 4.0371175194956616e-05,
+      "clock_length": 4.0371175194956616e-05,
+      "date": "2022-11-24",
+      "mutation_length": 4.507426228403101e-17,
+      "num_date_confidence": [
+        2022.8972602739725,
+        2022.8972602739725
+      ],
+      "numdate": 2022.8972602739725,
+      "raw_date": "2022-11-24"
+    },
+    "EPI_ISL_18054509|A/sealion/Peru/AQP-SER00K/2023|WildMammal|SouthAmerica|SeaLion|2023-02-07": {
+      "branch_length": 0.00013734507940631972,
+      "clock_length": 0.00013734507940631972,
+      "date": "2023-02-07",
+      "mutation_length": 0.000586005672133632,
+      "num_date_confidence": [
+        2023.1027397260275,
+        2023.1027397260275
+      ],
+      "numdate": 2023.1027397260275,
+      "raw_date": "2023-02-07"
+    },
+    "EPI_ISL_18132794|A/BaldEagle/Minnesota/USDA-011695-001/2022|WildBird|NorthAmerica|Eagle|2022-04-14": {
+      "branch_length": 0.0008787460416154313,
+      "clock_length": 0.0008787460416154313,
+      "date": "2022-04-14",
+      "mutation_length": 0.0011713532561266728,
+      "num_date_confidence": [
+        2022.2835616438356,
+        2022.2835616438356
+      ],
+      "numdate": 2022.2835616438356,
+      "raw_date": "2022-04-14"
+    },
+    "EPI_ISL_18132805|A/Turkey/SouthDakota/USDA-010138-001/2022|LivestockAvian|NorthAmerica|Turkey|2022-04-04": {
+      "branch_length": 0.0008422149590553638,
+      "clock_length": 0.0008422149590553638,
+      "date": "2022-04-04",
+      "mutation_length": 0.0011713660194427897,
+      "num_date_confidence": [
+        2022.2561643835616,
+        2022.2561643835616
+      ],
+      "numdate": 2022.2561643835616,
+      "raw_date": "2022-04-04"
+    },
+    "EPI_ISL_18133353|A/Duck/Indiana/USDA-011343-001/2022|OtherBird|NorthAmerica|Duck|2022-04-12": {
+      "branch_length": 0.0008553665893158511,
+      "clock_length": 0.0008553665893158511,
+      "date": "2022-04-12",
+      "mutation_length": 0.0017584913827130711,
+      "num_date_confidence": [
+        2022.2780821917809,
+        2022.2780821917809
+      ],
+      "numdate": 2022.2780821917809,
+      "raw_date": "2022-04-12"
+    },
+    "EPI_ISL_18211466|A/Chicken/Pakistan/501/2018|LivestockAvian|Asia|Chicken|2018-02-11": {
+      "branch_length": 0.007556228731348383,
+      "clock_length": 0.007556228731348383,
+      "date": "2018-02-11",
+      "mutation_length": 0.014816134767349769,
+      "num_date_confidence": [
+        2018.113698630137,
+        2018.113698630137
+      ],
+      "numdate": 2018.113698630137,
+      "raw_date": "2018-02-11"
+    },
+    "EPI_ISL_18290476|A/arctic-Fox/Finland/1086/2023|WildMammal|Europe|Fox|2023-08-09": {
+      "branch_length": 0.00377605658209303,
+      "clock_length": 0.00377605658209303,
+      "date": "2023-08-09",
+      "mutation_length": 0.003524125166387058,
+      "num_date_confidence": [
+        2023.6041095890412,
+        2023.6041095890412
+      ],
+      "numdate": 2023.6041095890412,
+      "raw_date": "2023-08-09"
+    },
+    "EPI_ISL_18310960|A/backyardDuck/Uruguay/UDELAR-124-M3/2023|WildBird|SouthAmerica|Duck|2023-04-16": {
+      "branch_length": 0.0009319274421051493,
+      "clock_length": 0.0009319274421051493,
+      "date": "2023-04-16",
+      "mutation_length": 0.0011730620662710163,
+      "num_date_confidence": [
+        2023.2890410958903,
+        2023.2890410958903
+      ],
+      "numdate": 2023.2890410958903,
+      "raw_date": "2023-04-16"
+    },
+    "EPI_ISL_18439563|A/Brown_skua/Bird_Island/128288/2023|WildBird|Antarctica|Skua|2023-10-08": {
+      "branch_length": 0.0004225515620889359,
+      "clock_length": 0.0004225515620889359,
+      "date": "2023-10-08",
+      "mutation_length": 0.0011737543391359335,
+      "num_date_confidence": [
+        2023.768493150685,
+        2023.768493150685
+      ],
+      "numdate": 2023.768493150685,
+      "raw_date": "2023-10-08"
+    },
+    "EPI_ISL_18439564|A/Brown_skua/Bird_Island/128289/2023|WildBird|Antarctica|Skua|2023-10-08": {
+      "branch_length": 0.0004225515620889359,
+      "clock_length": 0.0004225515620889359,
+      "date": "2023-10-08",
+      "mutation_length": 4.507426228403101e-17,
+      "num_date_confidence": [
+        2023.768493150685,
+        2023.768493150685
+      ],
+      "numdate": 2023.768493150685,
+      "raw_date": "2023-10-08"
+    },
+    "EPI_ISL_18462535|A/white-faced_whistling_Duck/Nigeria/VRD22-305-Dal13_23VIR8254-108/2022|WildBird|Africa|Duck|2022-03-01": {
+      "branch_length": 0.002605752526064462,
+      "clock_length": 0.002605752526064462,
+      "date": "2022-03-01",
+      "mutation_length": 0.005882689087967961,
+      "num_date_confidence": [
+        2022.16301369863,
+        2022.16301369863
+      ],
+      "numdate": 2022.16301369863,
+      "raw_date": "2022-03-01"
+    },
+    "EPI_ISL_18472587|A/white-napedCrane/Kagoshima/KU-185/2022(H5N1)|WildBird|Asia|Crane|2022-12-07": {
+      "branch_length": 0.003009785949871925,
+      "clock_length": 0.003009785949871925,
+      "date": "2022-12-07",
+      "mutation_length": 0.0047027905466748825,
+      "num_date_confidence": [
+        2022.9328767123288,
+        2022.9328767123288
+      ],
+      "numdate": 2022.9328767123288,
+      "raw_date": "2022-12-07"
+    },
+    "EPI_ISL_18690733|A/sealion/Biobio/SJCEIRR-2462961/2023|WildMammal|SouthAmerica|SeaLion|2023-03-26": {
+      "branch_length": 2.3379452300550767e-05,
+      "clock_length": 2.3379452300550767e-05,
+      "date": "2023-03-26",
+      "mutation_length": 4.507426228403101e-17,
+      "num_date_confidence": [
+        2023.231506849315,
+        2023.231506849315
+      ],
+      "numdate": 2023.231506849315,
+      "raw_date": "2023-03-26"
+    },
+    "EPI_ISL_18698502|A/Chicken/Argentina/919-3/2023|LivestockAvian|SouthAmerica|Chicken|2023-03-13": {
+      "branch_length": 0.0012778267306815718,
+      "clock_length": 0.0012778267306815718,
+      "date": "2023-03-13",
+      "mutation_length": 0.0011729558687810118,
+      "num_date_confidence": [
+        2023.195890410959,
+        2023.195890410959
+      ],
+      "numdate": 2023.195890410959,
+      "raw_date": "2023-03-13"
+    },
+    "EPI_ISL_18698516|A/Avian/Argentina/1762-2/2023|OtherBird|SouthAmerica|Avian|2023-04-21": {
+      "branch_length": 0.0009903760728550712,
+      "clock_length": 0.0009903760728550712,
+      "date": "2023-04-21",
+      "mutation_length": 0.0017598335422204954,
+      "num_date_confidence": [
+        2023.3027397260273,
+        2023.3027397260273
+      ],
+      "numdate": 2023.3027397260273,
+      "raw_date": "2023-04-21"
+    },
+    "EPI_ISL_18698523|A/Duck/Argentina/2197-1/2023|OtherBird|SouthAmerica|Duck|2023-05-11": {
+      "branch_length": 0.0012241705958547589,
+      "clock_length": 0.0012241705958547589,
+      "date": "2023-05-11",
+      "mutation_length": 0.0011735941476557182,
+      "num_date_confidence": [
+        2023.3575342465754,
+        2023.3575342465754
+      ],
+      "numdate": 2023.3575342465754,
+      "raw_date": "2023-05-11"
+    },
+    "EPI_ISL_18771178|A/whitemink/Finland/UH-353-E1/2023|LivestockMammal|Europe|Mink|2023-10-17": {
+      "branch_length": 0.0,
+      "clock_length": 0.0,
+      "date": "2023-10-17",
+      "mutation_length": 4.507426228403101e-17,
+      "num_date_confidence": [
+        2023.7931506849316,
+        2023.7931506849316
+      ],
+      "numdate": 2023.7931506849316,
+      "raw_date": "2023-10-17"
+    },
+    "EPI_ISL_18771245|A/whitemink/Finland/UH-361-E1/2023|LivestockMammal|Europe|Mink|2023-10-17": {
+      "branch_length": 0.0,
+      "clock_length": 0.0,
+      "date": "2023-10-17",
+      "mutation_length": 4.507426228403101e-17,
+      "num_date_confidence": [
+        2023.7931506849316,
+        2023.7931506849316
+      ],
+      "numdate": 2023.7931506849316,
+      "raw_date": "2023-10-17"
+    },
+    "EPI_ISL_18953098|A/barnacle_Goose/Denmark/14600-2/2020|WildBird|Europe|Goose|2020-11-07": {
+      "branch_length": 0.0006995557090502449,
+      "clock_length": 0.0006995557090502449,
+      "date": "2020-11-07",
+      "mutation_length": 0.0017582789478609497,
+      "num_date_confidence": [
+        2020.8510928961748,
+        2020.8510928961748
+      ],
+      "numdate": 2020.8510928961748,
+      "raw_date": "2020-11-07"
+    },
+    "EPI_ISL_19027114|A/Human/Texas/37/2024|Human|NorthAmerica|Human|2024-03-28": {
+      "branch_length": 0.0020110684616236676,
+      "clock_length": 0.0020110684616236676,
+      "date": "2024-03-28",
+      "mutation_length": 0.0005863173357503404,
+      "num_date_confidence": [
+        2024.2390710382513,
+        2024.2390710382513
+      ],
+      "numdate": 2024.2390710382513,
+      "raw_date": "2024-03-28"
+    },
+    "EPI_ISL_19054391|A/feline/Texas/24-008764-002-original/2024|WildMammal|NorthAmerica|Feline|2024-03-22": {
+      "branch_length": 7.594641205074912e-05,
+      "clock_length": 7.594641205074912e-05,
+      "date": "2024-03-22",
+      "mutation_length": 4.507426228403101e-17,
+      "num_date_confidence": [
+        2024.2226775956285,
+        2024.2226775956285
+      ],
+      "numdate": 2024.2226775956285,
+      "raw_date": "2024-03-22"
+    },
+    "EPI_ISL_19074717|A/murine/Hiroshima/TU10-B/2024|WildMammal|Asia|Murine|2024-03-12": {
+      "branch_length": 0.009089495659375498,
+      "clock_length": 0.009089495659375498,
+      "date": "2024-03-12",
+      "mutation_length": 0.0023445737114006888,
+      "num_date_confidence": [
+        2024.1953551912568,
+        2024.1953551912568
+      ],
+      "numdate": 2024.1953551912568,
+      "raw_date": "2024-03-12"
+    },
+    "EPI_ISL_19094615|A/dairycattle/Texas/24_009367-003/2024|LivestockMammal|NorthAmerica|DairyCattle|2024-03-25": {
+      "branch_length": 0.0003746805488877294,
+      "clock_length": 0.0003746805488877294,
+      "date": "2024-03-25",
+      "mutation_length": 0.001173168059139661,
+      "num_date_confidence": [
+        2024.23087431694,
+        2024.23087431694
+      ],
+      "numdate": 2024.23087431694,
+      "raw_date": "2024-03-25"
+    },
+    "EPI_ISL_19094660|A/Domesticcat/Oklahoma/24_009118-002/2024|Pet|NorthAmerica|Cat|2024-03-20": {
+      "branch_length": 0.0003163916138500774,
+      "clock_length": 0.0003163916138500774,
+      "date": "2024-03-20",
+      "mutation_length": 0.0005864719019496608,
+      "num_date_confidence": [
+        2024.217213114754,
+        2024.217213114754
+      ],
+      "numdate": 2024.217213114754,
+      "raw_date": "2024-03-20"
+    },
+    "EPI_ISL_19094696|A/dairycattle/Michigan/24_010071-003/2024|LivestockMammal|NorthAmerica|DairyCattle|2024-04-01": {
+      "branch_length": 0.00019252428212508297,
+      "clock_length": 0.00019252428212508297,
+      "date": "2024-04-01",
+      "mutation_length": 4.507426228403101e-17,
+      "num_date_confidence": [
+        2024.25,
+        2024.25
+      ],
+      "numdate": 2024.25,
+      "raw_date": "2024-04-01"
+    },
+    "EPI_ISL_224722|A/Bar-headedGoose/Qinghai/BTY9-LU/2016|WildBird|Asia|Goose|2016-05-09": {
+      "branch_length": 0.002197226113280999,
+      "clock_length": 0.002197226113280999,
+      "date": "2016-05-09",
+      "mutation_length": 0.003523245635032797,
+      "num_date_confidence": [
+        2016.353825136612,
+        2016.353825136612
+      ],
+      "numdate": 2016.353825136612,
+      "raw_date": "2016-05-09"
+    },
+    "EPI_ISL_266596|A/swine/Guangdong/G3/2015|LivestockMammal|Asia|Swine|2015-03-26": {
+      "branch_length": 0.005339805149805782,
+      "clock_length": 0.005339805149805782,
+      "date": "2015-03-26",
+      "mutation_length": 0.00708349648096805,
+      "num_date_confidence": [
+        2015.231506849315,
+        2015.231506849315
+      ],
+      "numdate": 2015.231506849315,
+      "raw_date": "2015-03-26"
+    },
+    "EPI_ISL_316558|A/Duck/Italy/17VIR9533/2017|OtherBird|Europe|Duck|2017-10-25": {
+      "branch_length": 0.004901033362780621,
+      "clock_length": 0.004901033362780621,
+      "date": "2017-10-25",
+      "mutation_length": 0.00884901632642088,
+      "num_date_confidence": [
+        2017.8150684931506,
+        2017.8150684931506
+      ],
+      "numdate": 2017.8150684931506,
+      "raw_date": "2017-10-25"
+    },
+    "EPI_ISL_369350|A/Chicken/SouthAfrica/17080561/2017|LivestockAvian|Africa|Chicken|2017-08-29": {
+      "branch_length": 0.0009613370537132938,
+      "clock_length": 0.0009613370537132938,
+      "date": "2017-08-29",
+      "mutation_length": 0.0005858760946278833,
+      "num_date_confidence": [
+        2017.658904109589,
+        2017.658904109589
+      ],
+      "numdate": 2017.658904109589,
+      "raw_date": "2017-08-29"
+    },
+    "EPI_ISL_389755|A/Chicken/Egypt/Q13944C/2017|LivestockAvian|Africa|Chicken|2017-04-12": {
+      "branch_length": 0.0039514297074169195,
+      "clock_length": 0.0039514297074169195,
+      "date": "2017-04-12",
+      "mutation_length": 0.004704082985020141,
+      "num_date_confidence": [
+        2017.2780821917809,
+        2017.2780821917809
+      ],
+      "numdate": 2017.2780821917809,
+      "raw_date": "2017-04-12"
+    },
+    "EPI_ISL_4568642|A/Human/Hunan/09285/2021|Human|Asia|Human|2021-08-07": {
+      "branch_length": 0.0030688895851263536,
+      "clock_length": 0.0030688895851263536,
+      "date": "2021-08-07",
+      "mutation_length": 0.00470435436843187,
+      "num_date_confidence": [
+        2021.5986301369862,
+        2021.5986301369862
+      ],
+      "numdate": 2021.5986301369862,
+      "raw_date": "2021-08-07"
+    },
+    "EPI_ISL_681272|A/Chicken/Kagawa/F3C/2020|LivestockAvian|Asia|Chicken|2020-11-19": {
+      "branch_length": 0.014721502145772586,
+      "clock_length": 0.014721502145772586,
+      "date": "2020-11-19",
+      "mutation_length": 0.017235260889099435,
+      "num_date_confidence": [
+        2020.8838797814208,
+        2020.8838797814208
+      ],
+      "numdate": 2020.8838797814208,
+      "raw_date": "2020-11-19"
+    },
+    "EPI_ISL_9029956|A/Chicken/England/057314/2021|LivestockAvian|Europe|Chicken|2021-11-14": {
+      "branch_length": 0.0013549518280194343,
+      "clock_length": 0.0013549518280194343,
+      "date": "2021-11-14",
+      "mutation_length": 0.0023462369316353837,
+      "num_date_confidence": [
+        2021.8698630136987,
+        2021.8698630136987
+      ],
+      "numdate": 2021.8698630136987,
+      "raw_date": "2021-11-14"
+    },
+    "NODE_0000000": {
+      "branch_length": 0.001,
+      "clock_length": 0.001,
+      "date": "2009-12-18",
+      "mutation_length": 0.001,
+      "num_date_confidence": [
+        2007.9235588394388,
+        2011.5450193350239
+      ],
+      "numdate": 2009.9626973009058
+    },
+    "NODE_0000001": {
+      "branch_length": 0.017140888226572552,
+      "clock_length": 0.017140888226572552,
+      "date": "2013-12-24",
+      "mutation_length": 0.01725434077881888,
+      "num_date_confidence": [
+        2012.8973932130123,
+        2014.0909566290404
+      ],
+      "numdate": 2013.9800144736616
+    },
+    "NODE_0000002": {
+      "branch_length": 0.02507211886562858,
+      "clock_length": 0.02507211886562858,
+      "date": "2015-11-03",
+      "mutation_length": 0.025757985918365756,
+      "num_date_confidence": [
+        2015.3048002181342,
+        2016.153979265123
+      ],
+      "numdate": 2015.8388603296175
+    },
+    "NODE_0000003": {
+      "branch_length": 0.0010676433854515874,
+      "clock_length": 0.0010676433854515874,
+      "date": "2016-02-02",
+      "mutation_length": 0.0005859684176711808,
+      "num_date_confidence": [
+        2015.731246676148,
+        2016.3630585847716
+      ],
+      "numdate": 2016.089084358271
+    },
+    "NODE_0000004": {
+      "branch_length": 0.0010822943037077093,
+      "clock_length": 0.0010822943037077093,
+      "date": "2016-05-05",
+      "mutation_length": 0.0005858144100772144,
+      "num_date_confidence": [
+        2015.8410106448507,
+        2016.4979733566342
+      ],
+      "numdate": 2016.3427421287895
+    },
+    "NODE_0000005": {
+      "branch_length": 0.004654397136741761,
+      "clock_length": 0.004654397136741761,
+      "date": "2017-06-08",
+      "mutation_length": 0.0035234149047127573,
+      "num_date_confidence": [
+        2016.9812846512068,
+        2017.645144730816
+      ],
+      "numdate": 2017.433595140553
+    },
+    "NODE_0000006": {
+      "branch_length": 0.0011217268519017054,
+      "clock_length": 0.0011217268519017054,
+      "date": "2016-05-08",
+      "mutation_length": 0.002346284432854017,
+      "num_date_confidence": [
+        2016.1314678476813,
+        2016.735473723222
+      ],
+      "numdate": 2016.3519839516714
+    },
+    "NODE_0000007": {
+      "branch_length": 0.0013415826700281866,
+      "clock_length": 0.0013415826700281866,
+      "date": "2016-08-31",
+      "mutation_length": 0.0011727138523986431,
+      "num_date_confidence": [
+        2016.35251058327,
+        2016.9596188220637
+      ],
+      "numdate": 2016.6664112455044
+    },
+    "NODE_0000008": {
+      "branch_length": 0.01624231231456425,
+      "clock_length": 0.01624231231456425,
+      "date": "2020-06-22",
+      "mutation_length": 0.014842934669895193,
+      "num_date_confidence": [
+        2020.3447066456288,
+        2020.6300009991048
+      ],
+      "numdate": 2020.473128804365
+    },
+    "NODE_0000011": {
+      "branch_length": 0.0012453121612207678,
+      "clock_length": 0.0012453121612207678,
+      "date": "2020-10-06",
+      "mutation_length": 0.0029335581396673772,
+      "num_date_confidence": [
+        2020.6301388188638,
+        2020.9913787331946
+      ],
+      "numdate": 2020.7649931386156
+    },
+    "NODE_0000012": {
+      "branch_length": 0.0004880311149644597,
+      "clock_length": 0.0004880311149644597,
+      "date": "2020-11-17",
+      "mutation_length": 0.0005857620330124403,
+      "num_date_confidence": [
+        2020.7173994053746,
+        2021.1259123399977
+      ],
+      "numdate": 2020.8793731960006
+    },
+    "NODE_0000013": {
+      "branch_length": 0.000467765294486229,
+      "clock_length": 0.000467765294486229,
+      "date": "2020-08-01",
+      "mutation_length": 0.0011717498426347059,
+      "num_date_confidence": [
+        2020.504497395309,
+        2020.7318053119302
+      ],
+      "numdate": 2020.582759152893
+    },
+    "NODE_0000014": {
+      "branch_length": 0.0004453573021014623,
+      "clock_length": 0.0004453573021014623,
+      "date": "2020-09-08",
+      "mutation_length": 0.0005855199982934806,
+      "num_date_confidence": [
+        2020.5987192546722,
+        2020.7934427729347
+      ],
+      "numdate": 2020.6871377308346
+    },
+    "NODE_0000015": {
+      "branch_length": 0.0006739046781535987,
+      "clock_length": 0.0006739046781535987,
+      "date": "2020-11-05",
+      "mutation_length": 0.0005856145028868288,
+      "num_date_confidence": [
+        2020.7249155907807,
+        2021.0356845708661
+      ],
+      "numdate": 2020.8450810532902
+    },
+    "NODE_0000016": {
+      "branch_length": 0.00042694519862938526,
+      "clock_length": 0.00042694519862938526,
+      "date": "2020-09-06",
+      "mutation_length": 0.0011714307115381153,
+      "num_date_confidence": [
+        2020.599006058768,
+        2020.8055332595104
+      ],
+      "numdate": 2020.6828224784108
+    },
+    "NODE_0000018": {
+      "branch_length": 0.001251353883077469,
+      "clock_length": 0.001251353883077469,
+      "date": "2020-12-23",
+      "mutation_length": 0.0011714179827661808,
+      "num_date_confidence": [
+        2020.7915983101898,
+        2021.1578148985334
+      ],
+      "numdate": 2020.9761028135506
+    },
+    "NODE_0000020": {
+      "branch_length": 0.00464624956721787,
+      "clock_length": 0.00464624956721787,
+      "date": "2022-01-24",
+      "mutation_length": 0.002932408443552852,
+      "num_date_confidence": [
+        2021.7004102564144,
+        2022.176967169315
+      ],
+      "numdate": 2022.0650462760227
+    },
+    "NODE_0000021": {
+      "branch_length": 0.005339279170277891,
+      "clock_length": 0.005339279170277891,
+      "date": "2022-03-25",
+      "mutation_length": 0.007061740330202247,
+      "num_date_confidence": [
+        2021.979018956623,
+        2022.4412356768785
+      ],
+      "numdate": 2022.2274719151612
+    },
+    "NODE_0000022": {
+      "branch_length": 0.0015821244969049936,
+      "clock_length": 0.0015821244969049936,
+      "date": "2021-05-07",
+      "mutation_length": 0.0017582409795935594,
+      "num_date_confidence": [
+        2021.1736953085765,
+        2021.5710213473762
+      ],
+      "numdate": 2021.3469059963752
+    },
+    "NODE_0000023": {
+      "branch_length": 0.0008763750490407736,
+      "clock_length": 0.0008763750490407736,
+      "date": "2021-07-21",
+      "mutation_length": 0.0017596041159177703,
+      "num_date_confidence": [
+        2021.3816439488512,
+        2021.7056068454665
+      ],
+      "numdate": 2021.5523023846922
+    },
+    "NODE_0000025": {
+      "branch_length": 0.0009091645472623158,
+      "clock_length": 0.0009091645472623158,
+      "date": "2021-07-24",
+      "mutation_length": 0.000585790429364803,
+      "num_date_confidence": [
+        2021.408087654683,
+        2021.7354096575345
+      ],
+      "numdate": 2021.5599872731618
+    },
+    "NODE_0000027": {
+      "branch_length": 0.007382782035398902,
+      "clock_length": 0.007382782035398902,
+      "date": "2023-04-16",
+      "mutation_length": 0.0017602703674169402,
+      "num_date_confidence": [
+        2023.063605567147,
+        2023.478082191781
+      ],
+      "numdate": 2023.2902929995328
+    },
+    "NODE_0000028": {
+      "branch_length": 0.001052528599588225,
+      "clock_length": 0.001052528599588225,
+      "date": "2021-10-22",
+      "mutation_length": 0.0011723774504687882,
+      "num_date_confidence": [
+        2021.6182870173197,
+        2022.3465131590197
+      ],
+      "numdate": 2021.8066688431045
+    },
+    "NODE_0000029": {
+      "branch_length": 0.0037377741978665124,
+      "clock_length": 0.0037377741978665124,
+      "date": "2022-09-07",
+      "mutation_length": 0.0035228885124266593,
+      "num_date_confidence": [
+        2022.4409915693998,
+        2022.7209704054032
+      ],
+      "numdate": 2022.6826925517064
+    },
+    "NODE_0000030": {
+      "branch_length": 0.0038931738010415974,
+      "clock_length": 0.0038931738010415974,
+      "date": "2022-09-20",
+      "mutation_length": 0.0035232529110997605,
+      "num_date_confidence": [
+        2022.2017777330632,
+        2023.1045500074997
+      ],
+      "numdate": 2022.7191136219697
+    },
+    "NODE_0000031": {
+      "branch_length": 0.004582647686440204,
+      "clock_length": 0.004582647686440204,
+      "date": "2023-10-17",
+      "mutation_length": 0.005883617186725131,
+      "num_date_confidence": [
+        2023.6668481786608,
+        2023.7931506849316
+      ],
+      "numdate": 2023.7931506849316
+    },
+    "NODE_0000032": {
+      "branch_length": 0.005848741113241945,
+      "clock_length": 0.005848741113241945,
+      "date": "2022-01-20",
+      "mutation_length": 0.007067123711896507,
+      "num_date_confidence": [
+        2021.6117446378073,
+        2022.0942830040535
+      ],
+      "numdate": 2022.0535943895657
+    },
+    "NODE_0000033": {
+      "branch_length": 0.0001024667508288564,
+      "clock_length": 0.0001024667508288564,
+      "date": "2022-01-29",
+      "mutation_length": 0.0005853997026261092,
+      "num_date_confidence": [
+        2021.9427231388304,
+        2022.209505439508
+      ],
+      "numdate": 2022.0776095649928
+    },
+    "NODE_0000034": {
+      "branch_length": 0.0002637607758149711,
+      "clock_length": 0.0002637607758149711,
+      "date": "2024-03-15",
+      "mutation_length": 4.507426228403101e-17,
+      "num_date_confidence": [
+        2024.1279666525948,
+        2024.2226775956285
+      ],
+      "numdate": 2024.2048780031391
+    },
+    "NODE_0000035": {
+      "branch_length": 2.210057188908182e-05,
+      "clock_length": 2.210057188908182e-05,
+      "date": "2022-01-22",
+      "mutation_length": 0.0005853997026261092,
+      "num_date_confidence": [
+        2022.0182280280035,
+        2022.2451798530326
+      ],
+      "numdate": 2022.0587741098814
+    },
+    "NODE_0000040": {
+      "branch_length": 0.0007449042342027416,
+      "clock_length": 0.0007449042342027416,
+      "date": "2022-03-27",
+      "mutation_length": 0.0005858474184404695,
+      "num_date_confidence": [
+        2022.0986818982874,
+        2022.3382297508158
+      ],
+      "numdate": 2022.2333576281078
+    },
+    "NODE_0000041": {
+      "branch_length": 0.0011552421309795266,
+      "clock_length": 0.0011552421309795266,
+      "date": "2022-07-04",
+      "mutation_length": 0.0029348359352242524,
+      "num_date_confidence": [
+        2022.3024587003654,
+        2022.7109252967568
+      ],
+      "numdate": 2022.5041122115417
+    },
+    "NODE_0000042": {
+      "branch_length": 0.005391567189853197,
+      "clock_length": 0.005391567189853197,
+      "date": "2023-10-08",
+      "mutation_length": 0.007063991933835996,
+      "num_date_confidence": [
+        2023.6494951631887,
+        2024.2153365018999
+      ],
+      "numdate": 2023.7677360782611
+    },
+    "NODE_0000043": {
+      "branch_length": 0.0016014145517139293,
+      "clock_length": 0.0016014145517139293,
+      "date": "2024-02-22",
+      "mutation_length": 0.001173022871241999,
+      "num_date_confidence": [
+        2024.0036563904137,
+        2024.1971083369738
+      ],
+      "numdate": 2024.143060279333
+    },
+    "NODE_0000046": {
+      "branch_length": 0.0007518308068286093,
+      "clock_length": 0.0007518308068286093,
+      "date": "2022-09-06",
+      "mutation_length": 0.0005858109930246309,
+      "num_date_confidence": [
+        2022.4297286477886,
+        2022.7408112126386
+      ],
+      "numdate": 2022.6803191135036
+    },
+    "NODE_0000047": {
+      "branch_length": 0.0008852625309402401,
+      "clock_length": 0.0008852625309402401,
+      "date": "2022-11-21",
+      "mutation_length": 0.0011723905799691497,
+      "num_date_confidence": [
+        2022.7044440671057,
+        2022.8972602739725
+      ],
+      "numdate": 2022.8877984646863
+    },
+    "NODE_0000048": {
+      "branch_length": 0.0007797555570364934,
+      "clock_length": 0.0007797555570364934,
+      "date": "2023-01-26",
+      "mutation_length": 0.001172591126922578,
+      "num_date_confidence": [
+        2022.8965946002925,
+        2023.094772016108
+      ],
+      "numdate": 2023.0705501020827
+    },
+    "NODE_0000049": {
+      "branch_length": 0.000663382756153675,
+      "clock_length": 0.000663382756153675,
+      "date": "2023-03-24",
+      "mutation_length": 0.0005860116486737256,
+      "num_date_confidence": [
+        2023.0975026992112,
+        2023.2260273972602
+      ],
+      "numdate": 2023.2260273972602
+    },
+    "NODE_0000051": {
+      "branch_length": 3.6724594859933145e-05,
+      "clock_length": 3.6724594859933145e-05,
+      "date": "2022-11-24",
+      "mutation_length": 0.0005860998456384194,
+      "num_date_confidence": [
+        2022.779168386963,
+        2023.0990493305144
+      ],
+      "numdate": 2022.8964056234079
+    },
+    "NODE_0000052": {
+      "branch_length": 0.0007433499776741438,
+      "clock_length": 0.0007433499776741438,
+      "date": "2023-01-26",
+      "mutation_length": 0.0005863028753883368,
+      "num_date_confidence": [
+        2022.9633248093714,
+        2023.193006600664
+      ],
+      "numdate": 2023.0706248698789
+    },
+    "NODE_0000055": {
+      "branch_length": 0.0025550779562595947,
+      "clock_length": 0.0025550779562595947,
+      "date": "2023-09-02",
+      "mutation_length": 0.00293593093031756,
+      "num_date_confidence": [
+        2023.432595437237,
+        2023.7367442139919
+      ],
+      "numdate": 2023.6694595636084
+    }
+  }
+}

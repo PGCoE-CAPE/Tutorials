@@ -1,0 +1,109 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Linux 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    c4-16 (AVX512, FMA3, 187 GB RAM)
+Command: iqtree -ntmax 1 -s results/aligned-delim.fasta -m GTR -ninit 2 -n 2 -me 0.05 -nt AUTO -redo
+Seed:    312234 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jun 14 13:41:55 2024
+Kernel:  AVX+FMA - auto-detect threads (1 CPU cores detected)
+
+Reading alignment file results/aligned-delim.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 34 sequences with 10769 columns, 551 distinct patterns
+174 parsimony-informative, 178 singleton sites, 10417 constant sites
+                                                                                                              Gap/Ambiguity  Composition  p-value
+   1  KX369547.1                                                                                                      0.00%    passed     99.40%
+   2  1_0087_PF                                                                                                       1.70%    passed     99.94%
+   3  1_0181_PF                                                                                                       1.71%    passed     99.99%
+   4  1_0199_PF                                                                                                      15.72%    passed     87.43%
+   5  ZKC2_DELIM-YSASQXFSBLEOANPIHEHQ_2016                                                                            0.00%    passed     98.25%
+   6  SMGC_1                                                                                                          0.01%    passed     98.03%
+   7  EcEs062_16                                                                                                      0.00%    passed     99.10%
+   8  PAN_DELIM-YSASQXFSBLEOANPIHEHQ_CDC_259359_V1_V3_DELIM-YSASQXFSBLEOANPIHEHQ_2015                                 0.19%    passed     99.48%
+   9  COL_DELIM-YSASQXFSBLEOANPIHEHQ_FLR_00024_DELIM-YSASQXFSBLEOANPIHEHQ_2015                                        1.03%    passed     99.89%
+  10  COL_DELIM-YSASQXFSBLEOANPIHEHQ_FLR_00008_DELIM-YSASQXFSBLEOANPIHEHQ_2015                                        1.03%    passed     99.84%
+  11  VEN_DELIM-YSASQXFSBLEOANPIHEHQ_UF_1_DELIM-YSASQXFSBLEOANPIHEHQ_2016                                             0.00%    passed     99.85%
+  12  Colombia_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_ZC204Se                                     1.51%    passed     99.86%
+  13  Brazil_DELIM-YSASQXFSBLEOANPIHEHQ_2015_DELIM-YSASQXFSBLEOANPIHEHQ_ZBRC301                                       8.60%    passed     95.08%
+  14  Brazil_DELIM-YSASQXFSBLEOANPIHEHQ_2015_DELIM-YSASQXFSBLEOANPIHEHQ_ZBRA105                                       8.57%    passed     97.37%
+  15  Brazil_DELIM-YSASQXFSBLEOANPIHEHQ_2015_DELIM-YSASQXFSBLEOANPIHEHQ_ZBRC303                                      45.48%    passed     81.59%
+  16  HND_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_HU_ME59                                          3.79%    passed     97.77%
+  17  Nica1_16                                                                                                        1.18%    passed     99.99%
+  18  V8375                                                                                                           4.62%    passed     98.34%
+  19  PRVABC59                                                                                                        1.02%    passed     99.94%
+  20  USA_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_FL022                                            3.76%    passed     98.10%
+  21  BRA_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_FC_6706                                          6.87%    passed     97.57%
+  22  DOM_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_BB_0059                                         12.64%    passed     98.32%
+  23  DOM_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_BB_0433                                          3.76%    passed     97.76%
+  24  DOM_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_BB_0183                                          1.38%    passed     99.94%
+  25  DOM_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_MA_WGS16_011                                     3.63%    passed    100.00%
+  26  USA_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_FLUR022                                          0.00%    passed     99.03%
+  27  Aedes_aegypti_DELIM-YSASQXFSBLEOANPIHEHQ_USA_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_FL05    1.50%    passed     99.95%
+  28  USA_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_FLWB042                                         23.86%    passed     97.37%
+  29  SG_027                                                                                                          0.47%    passed     95.76%
+  30  SG_074                                                                                                          0.07%    passed     95.55%
+  31  SG_056                                                                                                          0.31%    passed     97.12%
+  32  SG_018                                                                                                          1.20%    passed     94.06%
+  33  Thailand_DELIM-YSASQXFSBLEOANPIHEHQ_1610acTw                                                                    2.93%    passed    100.00%
+  34  Brazil_DELIM-YSASQXFSBLEOANPIHEHQ_2016_DELIM-YSASQXFSBLEOANPIHEHQ_ZBRC16                                       33.35%    passed     63.59%
+****  TOTAL                                                                                                           5.64%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.003 seconds
+
+NOTE: 0 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 1 CPU cores
+Increase to 10 rounds for branch lengths
+153 trees examined
+Threads: 1 / Time: 1.000 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -21576
+BEST NUMBER OF THREADS: 1
+
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -18282.887
+2. Current log-likelihood: -18050.574
+3. Current log-likelihood: -17969.868
+Optimal log-likelihood: -17969.818
+Rate parameters:  A-C: 1.30052  A-G: 8.98918  A-T: 0.98842  C-G: 0.35981  C-T: 25.25775  G-T: 1.00000
+Base frequencies:  A: 0.274  C: 0.220  G: 0.292  T: 0.214
+Parameters optimization took 3 rounds (0.084 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.008980 sec (of wall-clock time) 0.008958 sec(of CPU time)
+Computing RapidNJ tree took 0.000778 sec (of wall-clock time) 0.000495 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -17983.847
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 2 best initial trees
+BETTER TREE FOUND at iteration 1: -17969.814
+Finish initializing candidate tree set (3)
+Current best tree score: -17969.814 / CPU time: 0.089
+Number of iterations: 2
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -17969.814
+Optimal log-likelihood: -17969.800
+Rate parameters:  A-C: 1.29290  A-G: 8.99056  A-T: 1.01285  C-G: 0.33327  C-T: 25.25574  G-T: 1.00000
+Base frequencies:  A: 0.274  C: 0.220  G: 0.292  T: 0.214
+Parameters optimization took 1 rounds (0.007 sec)
+BEST SCORE FOUND : -17969.800
+Total tree length: 0.037
+
+Total number of iterations: 2
+CPU time used for tree search: 0.089 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.089 sec (0h:0m:0s)
+Total CPU time used: 1.234 sec (0h:0m:1s)
+Total wall-clock time used: 1.272 sec (0h:0m:1s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/aligned-delim.fasta.iqtree
+  Maximum-likelihood tree:       results/aligned-delim.fasta.treefile
+  Likelihood distances:          results/aligned-delim.fasta.mldist
+  Screen log file:               results/aligned-delim.fasta.log
+
+Date and Time: Fri Jun 14 13:41:56 2024
